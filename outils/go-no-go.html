@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="fr" >
+
+<!-- Mirrored from pouremporter.communagir.org/outils/go-no-go by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Jan 2017 09:05:22 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<script type="text/javascript" src="http://use.typekit.net/sjy3kiq.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<meta name="author" content="Communagir" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link href="../cpeweb/css/layout.css" rel="stylesheet" type="text/css" />
+<link href="../cpeweb/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<!--[if lt IE 9]><link href="http://pouremporter.communagir.org/cpeweb/css/layoutie.css" rel="stylesheet" type="text/css" /><![endif]-->		
+<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="http://pouremporter.communagir.org/cpeweb/scripts/respond.min.js"></script><![endif]-->		
+<script type="text/javascript" charset="utf-8" src="../cpeweb/scripts/global.js"></script>
+<script type="text/javascript" charset="utf-8" src="../cpeweb/scripts/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../cpeweb/scripts/jquery.easing.1.3.js"></script>
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+		init();
+	});
+	$(window).load( function() {
+		$('body').removeClass('preload');
+	});
+</script>
+
+<!-- Google Analytic -->
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-33014145-1']);
+    _gaq.push(['_addDevId', 'i9k95']); // Google Analyticator App ID with Google
+	_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>	<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "c3b4cbb0-402a-4b69-969c-3696fa048e01", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+
+<!-- todo complete share meta -->
+<meta property="og:title" content="Go / No go | Outils d'animation | Communagir" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://pouremporter.communagir.org/outils/go-no-go" />
+<meta property="og:image" content="http://pouremporter.communagir.org/cpeweb/images/logo-fb.png" />
+<meta property="og:description" content="Vous avez plein d’idées mais par où commencer? Devriez-vous tout réaliser? Est-ce pertinent? Faisable? Go? No go? Let’s Go!" />
+<meta property="og:site_name" content="Communagir" />	
+	<title>Go / No go | Outils d'animation | Communagir</title>
+	<meta name="description" content="Vous avez plein d’idées mais par où commencer? Devriez-vous tout réaliser? Est-ce pertinent? Faisable? Go? No go? Let’s Go!" />
+
+	<script type="text/javascript" charset="utf-8" src="../cpeweb/scripts/spin.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			initSpinner();
+			initOutil();
+
+			$('.objectifsdesc').click ( function() {
+			
+				spinner.spin(spinnerTarget);
+				$.ajax(
+				{					
+					url: 'http://pouremporter.communagir.org/objectifs/' + $(this).attr('data-request'),
+					success: function(newHTML, textStatus, jqXHR)
+					{
+						$('#infocontent').html(newHTML);
+						$('.container').addClass('lightbox');
+						$('#info').fadeIn(400);						
+						spinner.stop();						
+					},
+					error: function(jqXHR, textStatus, errorThrown) {}
+				});
+				
+				return false;
+			})
+			
+			$('.etapesdesc').click ( function() {
+			
+				spinner.spin(spinnerTarget);
+				$.ajax(
+				{					
+					url: 'http://pouremporter.communagir.org/etapes/' + $(this).attr('data-request'),
+					success: function(newHTML, textStatus, jqXHR)
+					{
+						$('#infocontent').html(newHTML);
+						$('.container').addClass('lightbox');
+						$('#info').fadeIn(200);						
+						spinner.stop();						
+					},
+					error: function(jqXHR, textStatus, errorThrown) {}
+				});
+				
+				return false;
+			})			
+		});
+	</script>
+</head>
+<body id="outils" class="preload open" style="background-image: url('../cpeweb/images/section/bg_outils3.jpg');">
+	<div class="container">
+
+		<aside class="strans shadow">
+	<div id="asideTop">
+		<a id="logo" class="ftrans" href="../index.html" title="Accueil">
+			<span>
+				<img id="logoPic" class="strans" src="../cpeweb/images/aside/logo-pic.png" alt="Communagir"/><br />
+				<img id="logoTxt" class="strans" src="../cpeweb/images/aside/logo-communagir.png" width="206" height="52" alt="Communagir"/>
+			</span>
+		</a>
+	</div>
+	<ul>
+		<li id="nav1" >
+			<a class="ftrans" href="../incontournables.html" title="Les incontournables">
+				<div class="centerize">
+					<div class="asidePic">
+						<div class="pics">
+							<img class="ftrans std" src="../cpeweb/images/aside/incontournables.png" alt="Incontournables"/>
+							<img class="ftrans overlay" src="../cpeweb/images/aside/incontournables-w.png" alt="Incontournables"/>
+						</div>
+						<span>Pour une rencontre réussie</span>
+					</div>
+				</div>
+			</a>
+		</li>
+		<li id="nav2" class="active border">
+			<a class="ftrans" href="../outils.html" title="Les outils">
+				<div class="centerize">
+					<div class="asidePic">
+						<div class="pics">
+							<img class="ftrans std" src="../cpeweb/images/aside/outils.png" alt="Outils"/>
+							<img class="ftrans overlay" src="../cpeweb/images/aside/outils-w.png" alt="Outils"/>
+						</div>
+						<span>Les outils</span>
+					</div>
+				</div>
+			</a>
+		</li>
+		<li id="nav3" >
+			<a class="ftrans" href="../conseillers-en-developpement-collectif.html" title="Vos conseillers">
+				<div class="centerize">
+					<div class="asidePic">
+						<div class="pics">
+							<img class="ftrans std" src="../cpeweb/images/aside/conseillers.png" alt="Conseillers"/>
+							<img class="ftrans overlay" src="../cpeweb/images/aside/conseillers-w.png" alt="Conseillers"/>
+						</div>
+						<span>Les conseillers</span>
+					</div>
+				</div>
+			</a>
+		</li>
+	<li id="nav4">
+			<div class="centerize">
+			<span><a title="Contact" href="mailto:info@communagir.org">info@communagir.org</a></span>
+			
+							</div>
+						</li>
+	
+	
+	
+
+	</ul>
+</aside>
+		<section class="strans" role="main">
+			
+			<div id="mobilNav" class="ftrans">
+	<div>
+		<a id="mainNavBtn" href="#" title="Menu"><img src="../cpeweb/images/header/icone-mainnav.jpg" width="50" height="50" alt=""/></a>
+		<a id="mobilLogo" href="../index.html" title="Accueil"><img src="../cpeweb/images/aside/logo-pic.png" width="76" height="48" alt="Communagir"/></a>
+	</div>
+	<ul>
+		<li><a href="../incontournables.html" title="Incontournables"><img style="margin-right: 5px;" src="../cpeweb/images/aside/incontournables.png" width="36" height="40" alt="Incontournables"/>Pour une rencontre réussie</a></li>
+		<li><a href="../outils.html" title="Outils"><img src="../cpeweb/images/aside/outils.png" width="36" height="40" alt="Outils"/>Les outils</a></li>
+		<li><a href="../conseillers-en-developpement-collectif.html" title="Conseillers"><img src="../cpeweb/images/aside/conseillers.png" width="36" height="40" alt="Conseillers"/>Les conseillers</a></li>
+		<li id="last">
+			<a href="http://www.communagir.org/" title="Accéder au site"><img src="../cpeweb/images/header/icone-std-m.png" width="41" height="36" alt="Site web"/></a>
+			<a href="https://www.facebook.com/communagir" target="_blank" title="Facebook"><img src="../cpeweb/images/header/icone-facebook-m.png" width="18" height="36" alt="Facebook"/></a>
+			<a href="https://twitter.com/communagir" target="_blank" title="Twitter"><img src="../cpeweb/images/header/icone-twitter-m.png" width="42" height="34" alt="Twitter"/></a>
+		</li>
+	</ul>
+</div>			<div id="dtNav" class="ftrans">
+	<ul>
+		<li class="md-scr-hide"><a style="width: auto;" href="http://www.communagir.org/" title="Site web">Accéder au site web de <span class="ftrans">Communagir</span></a></li>
+		<li class="md-scr-show"><a href="http://www.communagir.org/" title="Site Web">
+				<img class="ftrans std" src="../cpeweb/images/header/icone-std-w.png" width="16" height="16" alt=""/>
+				<img class="ftrans overlay" src="../cpeweb/images/header/icone-std-g.png" width="16" height="16" alt=""/>
+			</a></li>
+		<li><a href="https://www.facebook.com/communagir" title="Facebook" target="_blank">
+				<img class="ftrans std" src="../cpeweb/images/header/icone-facebook-w.png" width="16" height="16" alt=""/>
+				<img class="ftrans overlay" src="../cpeweb/images/header/icone-facebook-g.png" width="16" height="16" alt=""/>
+			</a></li>
+		<li><a href="https://twitter.com/communagir" title="Twitter" target="_blank">
+				<img class="ftrans std" src="../cpeweb/images/header/icone-twitter-w.png" width="16" height="16" alt=""/>
+				<img class="ftrans overlay" src="../cpeweb/images/header/icone-twitter-g.png" width="16" height="16" alt=""/>
+			</a></li>
+	</ul>
+	<a id="home" href="../index.html" title="Accueil">
+		<img class="ftrans std" src="../cpeweb/images/header/icone-home-w.png" width="18" height="16" alt=""/>
+		<img class="ftrans overlay" src="../cpeweb/images/header/icone-home-g.png" width="18" height="16" alt=""/>
+	</a>
+	
+	<a class="linkBack linkOutil" href="../outils.html" title="Retour aux outils">Retour aux <span class="ftrans">outils</span></a>
+	<a class="linkBack linkConseil" href="../conseillers-en-developpement-collectif.html" title="Retour aux conseillers">Retour aux <span class="ftrans">conseillers</span></a>
+	<a class="linkBack linkInc" href="../incontournables.html" title="Retour aux incontournables">Retour aux <span class="ftrans">incontournables</span></a>
+</div>
+			<div class="content">
+				<div class="maxW">
+				
+					<h1>Go / No go </h1>
+					
+					<div class="mediaBox ftrans">
+	<div id="mediaLinks">
+					<a class="mediaLink ftrans shadow radius" href="../medias/2014/09/1-go_nogo.pdf" title="Imprimer" target="_blank">
+				<img class="ftrans std radius" src="../cpeweb/images/section/icone-media-pdf.gif" width="40" height="40" alt=""/>
+				<img class="ftrans overlay radius" src="../cpeweb/images/section/icone-media-pdf-hover.gif" width="40" height="40" alt=""/>
+			</a>
+			<a class="mediaLink ftrans shadow radius" href="../medias/2014/09/1-go_nogo.pdf" title="Imprimer" target="_blank">
+				<img class="ftrans std radius" src="../cpeweb/images/section/icone-media-print.gif" width="40" height="40" alt=""/>
+				<img class="ftrans overlay radius" src="../cpeweb/images/section/icone-media-print-hover.gif" width="40" height="40" alt=""/>
+			</a>
+				<a class="mediaLink ftrans shadow radius" href="mailto:?subject=Les%20outils%20d&rsquo;animation%20de%20Communagir
+				&body=Les%20outils%20d&rsquo;animation%20de%20Communagir%0D%0A
+				Consultez%20l&rsquo;outil%20&laquo;%20Go / No go %20&raquo;%0D%0A
+				http%3A%2F%2Fpouremporter.communagir.org%2Foutils%2Fgo-no-go" title="Mail">
+			<img class="ftrans std radius" src="../cpeweb/images/section/icone-media-mail.gif" width="40" height="40" alt=""/>
+			<img class="ftrans overlay radius" src="../cpeweb/images/section/icone-media-mail-hover.gif" width="40" height="40" alt=""/>
+		</a>
+
+		<span class="st_twitter_custom mediaLink ftrans shadow radius" displayText='Tweet'>
+			<img class="ftrans std radius" src="../cpeweb/images/section/icone-media-tw.gif" width="40" height="40" alt=""/>
+			<img class="ftrans overlay radius" src="../cpeweb/images/section/icone-media-tw-hover.gif" width="40" height="40" alt=""/>
+		</span>
+
+		<span style="margin-left: 0;" class="st_facebook_custom mediaLink ftrans shadow radius" displayText="Facebook">
+			<img class="ftrans std radius" src="../cpeweb/images/section/icone-media-fb.gif" width="40" height="40" alt=""/>
+			<img class="ftrans overlay radius" src="../cpeweb/images/section/icone-media-fb-hover.gif" width="40" height="40" alt=""/>
+		</span>		
+	</div>
+	<div class="clearfloat"></div>
+</div>					
+					<h3 style="margin-left: 0; margin-top: 0;">Description sommaire</h3>
+					<div class="dynamic nomargin">
+						<p>Il s’agit d’une activité qui permet à un groupe de se prononcer sur des propositions de travail et de les bonifier au besoin. Ces propositions n’ont pas nécessairement été créées par eux, mais plus souvent par un groupe de travail qui a été mandaté pour le faire. En fait, on pourrait dire qu’il s’agit d’une étude de faisabilité rapide et participative.</p>
+					</div>
+					<div class="col">
+												<h3><img src="../cpeweb/images/section/icone-objectifs.png" width="32" height="32" alt="Objectifs"/>
+															Objectifs principaux<br />de l’outil
+													</h3>
+						<ul>							
+															<li>Déclencher ou amorcer les échanges<a href="#" class="objectifsdesc" data-request="1" title="Description"></a></li>
+															<li>Se donner des assises communes<a href="#" class="objectifsdesc" data-request="2" title="Description"></a></li>
+															<li class="selected">Explorer et réfléchir collectivement<a href="#" class="objectifsdesc" data-request="3" title="Description"></a></li>
+															<li class="selected">Prioriser et décider ensemble<a href="#" class="objectifsdesc" data-request="4" title="Description"></a></li>
+															<li>Faire des bilans et évaluer<a href="#" class="objectifsdesc" data-request="5" title="Description"></a></li>
+															<li>Lire sa collectivité<a href="#" class="objectifsdesc" data-request="6" title="Description"></a></li>
+														
+						</ul>
+					</div>
+					<div class="col">
+												<h3><img src="../cpeweb/images/section/icone-etapes.png" width="25" height="22" alt="Étapes"/>
+															Étapes du processus de<br />planification collective
+													</h3>
+						<ul>							
+															<li class="selected">État de situation / diagnostic<a href="#" class="etapesdesc" data-request="1" title="Description"></a></li>
+															<li>Vision partagée de changement<a href="#" class="etapesdesc" data-request="3" title="Description"></a></li>
+															<li class="selected">Planification stratégique<a href="#" class="etapesdesc" data-request="4" title="Description"></a></li>
+															<li class="selected">Planification des opérations et de la gouvernance<a href="#" class="etapesdesc" data-request="5" title="Description"></a></li>
+															<li>Mise en œuvre et suivi<a href="#" class="etapesdesc" data-request="6" title="Description"></a></li>
+															<li>Bilan et évaluation stratégique<a href="#" class="etapesdesc" data-request="7" title="Description"></a></li>
+														
+						</ul>
+					</div>
+					<div class="clearfloat"></div>
+					
+											<h3><img src="../cpeweb/images/section/icone-lien.png" width="28" height="31" alt="Les incontournables"/>Les incontournables pour une rencontre réussie</h3>
+						<div class="dynamic">
+							<ul class="incs">
+																	<li><a href="../incontournables/le-travail-en-sous-groupes.html">Le travail en sous-groupes</a></li>
+																	<li><a href="../incontournables/le-travail-individuel.html">Le travail individuel</a></li>
+																	<li><a href="../incontournables/les-suites.html">Déterminer les suites</a></li>
+																	<li><a href="../incontournables/preparation-des-participantes.html">Préparer les participantes et participants avant la rencontre</a></li>
+															</ul>
+						</div>
+						<!--
+						<div class="dynamic">
+							<form method="post" action="http://pouremporter.communagir.org/incontournables" id="incLinkForm">
+								<a id="filterLink" class="backBtn shadow radius ftrans" href="#">
+									4 incontourbales								</a>
+								<input type="hidden" name="outil" value="21" />
+							</form>
+						</div>
+						-->
+										
+					
+											<h3><img src="../cpeweb/images/section/icone-medal.png" width="26" height="36" alt="Prérequis"/>Prérequis</h3>
+						<div class="dynamic">
+							<p>Avoir préalablement dégagé des propositions claires à mettre au jeu. Il peut être utile et pertinent que les participantes et participants les reçoivent avant la rencontre, accompagnées des explications nécessaires pour qu’ils puissent se «&nbsp;faire une tête&nbsp;».</p>
+						</div>
+																<h3><img src="../cpeweb/images/section/icone-pen.png" width="28" height="27" alt="Prérequis"/>Matériel requis</h3>
+						<div class="dynamic">
+							<p>Préparer préalablement un document par proposition à mettre au jeu avec le contenu suivant&nbsp;:</p>
+
+<ul>
+	<li>Proposition</li>
+	<li>Section GO&nbsp;:
+	<ul>
+		<li>Espace pour répondre à la question&nbsp;: C’est pertinent parce que…</li>
+		<li>Espace pour inscrire les préoccupations dont il faudra tenir compte ainsi que ce qui doit particulièrement être mis en valeur.</li>
+	</ul>
+	</li>
+	<li>Section NO GO&nbsp;:
+	<ul>
+		<li>Espace pour répondre à la question&nbsp;: Ce n’est pas pertinent parce que…</li>
+	</ul>
+	</li>
+</ul>
+
+<p><a href="../medias/2014/09/go_nogo.pdf"><img alt="" src="../medias/2014/08/schema_go_no_go.jpg" style="height:604px; width:700px" /></a></p>
+
+<p><a href="../medias/2014/09/go_nogo.pdf">Télécharger ce tableau</a></p>
+
+<p>●Une copie de chaque proposition pour toutes les personnes participant à l’activité</p>
+
+<p>●Une copie de chaque proposition en format affiche pour chacun des sous-groupes</p>
+
+<p>●Des crayons-feutres pour chaque sous-groupe</p>
+
+<p>●De la gommette</p>
+						</div>
+																<div class="col">
+							<h3><img src="../cpeweb/images/section/icone-filter1.png" width="30" height="18" alt="Taille du groupe"/>Taille du groupe</h3>
+							<div class="infoBoxes">								
+																	<div class="infoBox radius shadow"><p>Petit<br /><strong>2-10</strong></p></div>
+																	<div class="infoBox radius shadow"><p>Moyen<br /><strong>10-30</strong></p></div>
+																	<div class="infoBox radius shadow"><p>Grand<br /><strong>30-75</strong></p></div>
+															</div>
+						</div>
+																<div class="col">
+							<h3><img src="../cpeweb/images/section/icone-filter2.png" width="28" height="28" alt="Durée"/>Durée de l’animation</h3>
+							<div class="infoBoxes"><div id="duree" class="infoBox radius shadow"><p>Environ 90 minutes.</p></div></div>
+						</div>
+										<div class="clearfloat"></div>
+											<h3><img src="../cpeweb/images/section/icone-heart.png" width="30" height="26" alt="Valeur ajoutée"/>La valeur ajoutée</h3>
+						<div class="dynamic">
+							<p>J’ai développé cette activité pour un groupe de plus de 30 personnes qui avait à se prononcer sur la pertinence et la faisabilité de quelques propositions d’actions pour l’avenir. Il m’est venu à l’idée de m’inspirer du monde des affaires où on fait des études de faisabilité et où l’issue est de dire&nbsp;: GO (on peut y aller) ou NO GO. J’ai bien sûr adapté le concept, mais le fond est demeuré le même. Cette activité permet donc principalement d’aller chercher le pouls d’un groupe, ses préoccupations principales et ses idées pour bonifier, en s’appuyant sur un outil simple à utiliser.</p>
+
+<p><strong>Sonia Racine</strong></p>
+
+<p><em>Conseillère en développement collectif</em></p>
+						</div>
+																					<h3><img src="../cpeweb/images/section/icone-pad.png" width="26" height="35" alt="Animation"/>Déroulement de l’animation</h3>
+						<div class="dynamic">
+							<h1>Étapes</h1>
+
+<h2>1. Mise en contexte et présentation des propositions (5 min)</h2>
+
+<ul>
+	<li>Rappelez d’où sont issues les propositions et l’objectif à atteindre.</li>
+	<li>Présentez les propositions afin qu’elles soient idéalement comprises de la même façon par l’ensemble des participantes et participants.</li>
+	<li>Expliquez les consignes pour la suite.</li>
+</ul>
+
+<h2>2. Travail individuel (10 min)</h2>
+
+<p>Chaque personne remplit l’outil GO / NO GO pour chacune des propositions, selon ses propres perceptions.</p>
+
+<h2>3. Travail en sous-groupes : converger vers un terrain commun (40 à 45 min)</h2>
+
+<p>Formez des sous-groupes avec des acteurs provenant de différentes organisations ou milieux (hétérogénéité) – vous pouvez avoir préparé ces sous-groupes à l’avance.</p>
+
+<ul>
+	<li>Chaque personne partage à son groupe ses réponses individuelles pour chacune des propositions.</li>
+	<li>Une personne du sous-groupe prend des notes sur les outils reproduits en format affiche.</li>
+	<li>Le groupe tente de converger vers une réponse commune, mais sans obligation de le faire (les dissensions ou points de débat doivent être écrits pour être rapportés au grand groupe).</li>
+	<li>Chaque groupe doit se nommer un porte-parole.</li>
+</ul>
+
+<h2>4. Partage des travaux et analyse (30 min)</h2>
+
+<ul>
+	<li>Chaque sous-groupe vient coller ses outils remplis au mur :
+	<ul>
+		<li>Collez tous les outils reliés à une même proposition les uns sous les autres.</li>
+	</ul>
+	</li>
+	<li>Prenez une proposition à la fois et faites le tour des réponses de chacun des sous-groupes :
+	<ul>
+		<li>Faites ressortir les terrains communs ainsi que les désaccords ou divergences s’il y en a (les noter).</li>
+		<li>Concluez avec le groupe sur GO ou NO GO pour chaque proposition (si c’est possible) en rappelant les bonifications et préoccupations.</li>
+	</ul>
+	</li>
+</ul>
+
+<h2>5. Conclusion (5 min)</h2>
+
+<ul>
+	<li>Les responsables de l’activité ou des suites expliquent ce qu’ils vont faire avec le matériel recueilli et les prochaines étapes.</li>
+</ul>
+						</div>
+																<h3><img src="../cpeweb/images/section/icone-fire.png" width="24" height="28" alt="Pièges"/>Pièges à éviter</h3>
+						<div class="dynamic">
+							<ul>
+	<li>Avoir trop de propositions à traiter en même temps ou avec trop peu de temps. L’outil peut toutefois être adapté, de même que le déroulement, pour permettre d’étudier plus de propositions avec des groupes encore plus grands.</li>
+	<li>Démarrer l’activité avec des propositions qui ne sont pas assez claires pour tous. Les réponses risquent alors d’aller dans tous les sens.</li>
+</ul>
+						</div>
+																<h3><img src="../cpeweb/images/section/icone-suggestions.png" width="30" height="30" alt="Suggestion et variante"/>Suggestions et variantes</h3>
+						<div class="dynamic">
+							<p>On peut traiter plus de trois propositions avec cet exercice, mais il faut l’adapter. En effet, chaque sous-groupe ne peut traiter convenablement plus de trois propositions. On donnera donc des propositions différentes à chaque sous-groupe, tout en s’assurant qu’une même proposition est au moins traitée par deux sous-groupes différents.</p>
+						</div>
+																<h3><img src="../cpeweb/images/section/icone-references.png" width="32" height="32" alt="Référence"/>Référence</h3>
+						<div class="dynamic">
+							<p><strong><a href="../medias/2014/09/1-go_nogo.pdf">Télécharger la version PDF de l'outil</a></strong></p>
+						</div>
+										
+											<a class="backBtn shadow radius ftrans" href="../outils.html" title="Voir tous les incontournables">Voir tous les outils</a>
+									</div>
+				<div id="spinner"></div>
+			</div>
+		</section>
+		
+		<!-- Ajouter class='lightbox' sur le .container lors du fadeIn -->
+		<div id="info" class="strans">
+			<div class="content maxW">
+				<img src="../cpeweb/images/section/deco.png" width="378" height="378" alt=""/>
+				<div id="infocontent">
+				</div>
+				<a class="backBtn shadow radius ftrans" href="#" title="Retour à l’outil">Retour à l’outil</a>
+			</div>
+		</div>
+	</div>
+</body>
+
+<!-- Mirrored from pouremporter.communagir.org/outils/go-no-go by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Jan 2017 09:07:10 GMT -->
+</html>

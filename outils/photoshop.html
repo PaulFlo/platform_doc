@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="fr" >
+
+<!-- Mirrored from pouremporter.communagir.org/outils/photoshop by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Jan 2017 09:10:20 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<script type="text/javascript" src="http://use.typekit.net/sjy3kiq.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<meta name="author" content="Communagir" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link href="../cpeweb/css/layout.css" rel="stylesheet" type="text/css" />
+<link href="../cpeweb/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<!--[if lt IE 9]><link href="http://pouremporter.communagir.org/cpeweb/css/layoutie.css" rel="stylesheet" type="text/css" /><![endif]-->		
+<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="http://pouremporter.communagir.org/cpeweb/scripts/respond.min.js"></script><![endif]-->		
+<script type="text/javascript" charset="utf-8" src="../cpeweb/scripts/global.js"></script>
+<script type="text/javascript" charset="utf-8" src="../cpeweb/scripts/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../cpeweb/scripts/jquery.easing.1.3.js"></script>
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+		init();
+	});
+	$(window).load( function() {
+		$('body').removeClass('preload');
+	});
+</script>
+
+<!-- Google Analytic -->
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-33014145-1']);
+    _gaq.push(['_addDevId', 'i9k95']); // Google Analyticator App ID with Google
+	_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>	<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "c3b4cbb0-402a-4b69-969c-3696fa048e01", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+
+<!-- todo complete share meta -->
+<meta property="og:title" content="Photoshop | Outils d'animation | Communagir" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://pouremporter.communagir.org/outils/photoshop" />
+<meta property="og:image" content="http://pouremporter.communagir.org/cpeweb/images/logo-fb.png" />
+<meta property="og:description" content="Crayons feutres, revues, ciseaux, colle; une bonne dose d’imagination; des gens d’allumés ; clic! Une collectivité revampée!" />
+<meta property="og:site_name" content="Communagir" />	
+	<title>Photoshop | Outils d'animation | Communagir</title>
+	<meta name="description" content="Crayons feutres, revues, ciseaux, colle; une bonne dose d’imagination; des gens d’allumés ; clic! Une collectivité revampée!" />
+
+	<script type="text/javascript" charset="utf-8" src="../cpeweb/scripts/spin.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			initSpinner();
+			initOutil();
+
+			$('.objectifsdesc').click ( function() {
+			
+				spinner.spin(spinnerTarget);
+				$.ajax(
+				{					
+					url: 'http://pouremporter.communagir.org/objectifs/' + $(this).attr('data-request'),
+					success: function(newHTML, textStatus, jqXHR)
+					{
+						$('#infocontent').html(newHTML);
+						$('.container').addClass('lightbox');
+						$('#info').fadeIn(400);						
+						spinner.stop();						
+					},
+					error: function(jqXHR, textStatus, errorThrown) {}
+				});
+				
+				return false;
+			})
+			
+			$('.etapesdesc').click ( function() {
+			
+				spinner.spin(spinnerTarget);
+				$.ajax(
+				{					
+					url: 'http://pouremporter.communagir.org/etapes/' + $(this).attr('data-request'),
+					success: function(newHTML, textStatus, jqXHR)
+					{
+						$('#infocontent').html(newHTML);
+						$('.container').addClass('lightbox');
+						$('#info').fadeIn(200);						
+						spinner.stop();						
+					},
+					error: function(jqXHR, textStatus, errorThrown) {}
+				});
+				
+				return false;
+			})			
+		});
+	</script>
+</head>
+<body id="outils" class="preload open" style="background-image: url('../cpeweb/images/section/bg_outils2.jpg');">
+	<div class="container">
+
+		<aside class="strans shadow">
+	<div id="asideTop">
+		<a id="logo" class="ftrans" href="../index.html" title="Accueil">
+			<span>
+				<img id="logoPic" class="strans" src="../cpeweb/images/aside/logo-pic.png" alt="Communagir"/><br />
+				<img id="logoTxt" class="strans" src="../cpeweb/images/aside/logo-communagir.png" width="206" height="52" alt="Communagir"/>
+			</span>
+		</a>
+	</div>
+	<ul>
+		<li id="nav1" >
+			<a class="ftrans" href="../incontournables.html" title="Les incontournables">
+				<div class="centerize">
+					<div class="asidePic">
+						<div class="pics">
+							<img class="ftrans std" src="../cpeweb/images/aside/incontournables.png" alt="Incontournables"/>
+							<img class="ftrans overlay" src="../cpeweb/images/aside/incontournables-w.png" alt="Incontournables"/>
+						</div>
+						<span>Pour une rencontre réussie</span>
+					</div>
+				</div>
+			</a>
+		</li>
+		<li id="nav2" class="active border">
+			<a class="ftrans" href="../outils.html" title="Les outils">
+				<div class="centerize">
+					<div class="asidePic">
+						<div class="pics">
+							<img class="ftrans std" src="../cpeweb/images/aside/outils.png" alt="Outils"/>
+							<img class="ftrans overlay" src="../cpeweb/images/aside/outils-w.png" alt="Outils"/>
+						</div>
+						<span>Les outils</span>
+					</div>
+				</div>
+			</a>
+		</li>
+		<li id="nav3" >
+			<a class="ftrans" href="../conseillers-en-developpement-collectif.html" title="Vos conseillers">
+				<div class="centerize">
+					<div class="asidePic">
+						<div class="pics">
+							<img class="ftrans std" src="../cpeweb/images/aside/conseillers.png" alt="Conseillers"/>
+							<img class="ftrans overlay" src="../cpeweb/images/aside/conseillers-w.png" alt="Conseillers"/>
+						</div>
+						<span>Les conseillers</span>
+					</div>
+				</div>
+			</a>
+		</li>
+	<li id="nav4">
+			<div class="centerize">
+			<span><a title="Contact" href="mailto:info@communagir.org">info@communagir.org</a></span>
+			
+							</div>
+						</li>
+	
+	
+	
+
+	</ul>
+</aside>
+		<section class="strans" role="main">
+			
+			<div id="mobilNav" class="ftrans">
+	<div>
+		<a id="mainNavBtn" href="#" title="Menu"><img src="../cpeweb/images/header/icone-mainnav.jpg" width="50" height="50" alt=""/></a>
+		<a id="mobilLogo" href="../index.html" title="Accueil"><img src="../cpeweb/images/aside/logo-pic.png" width="76" height="48" alt="Communagir"/></a>
+	</div>
+	<ul>
+		<li><a href="../incontournables.html" title="Incontournables"><img style="margin-right: 5px;" src="../cpeweb/images/aside/incontournables.png" width="36" height="40" alt="Incontournables"/>Pour une rencontre réussie</a></li>
+		<li><a href="../outils.html" title="Outils"><img src="../cpeweb/images/aside/outils.png" width="36" height="40" alt="Outils"/>Les outils</a></li>
+		<li><a href="../conseillers-en-developpement-collectif.html" title="Conseillers"><img src="../cpeweb/images/aside/conseillers.png" width="36" height="40" alt="Conseillers"/>Les conseillers</a></li>
+		<li id="last">
+			<a href="http://www.communagir.org/" title="Accéder au site"><img src="../cpeweb/images/header/icone-std-m.png" width="41" height="36" alt="Site web"/></a>
+			<a href="https://www.facebook.com/communagir" target="_blank" title="Facebook"><img src="../cpeweb/images/header/icone-facebook-m.png" width="18" height="36" alt="Facebook"/></a>
+			<a href="https://twitter.com/communagir" target="_blank" title="Twitter"><img src="../cpeweb/images/header/icone-twitter-m.png" width="42" height="34" alt="Twitter"/></a>
+		</li>
+	</ul>
+</div>			<div id="dtNav" class="ftrans">
+	<ul>
+		<li class="md-scr-hide"><a style="width: auto;" href="http://www.communagir.org/" title="Site web">Accéder au site web de <span class="ftrans">Communagir</span></a></li>
+		<li class="md-scr-show"><a href="http://www.communagir.org/" title="Site Web">
+				<img class="ftrans std" src="../cpeweb/images/header/icone-std-w.png" width="16" height="16" alt=""/>
+				<img class="ftrans overlay" src="../cpeweb/images/header/icone-std-g.png" width="16" height="16" alt=""/>
+			</a></li>
+		<li><a href="https://www.facebook.com/communagir" title="Facebook" target="_blank">
+				<img class="ftrans std" src="../cpeweb/images/header/icone-facebook-w.png" width="16" height="16" alt=""/>
+				<img class="ftrans overlay" src="../cpeweb/images/header/icone-facebook-g.png" width="16" height="16" alt=""/>
+			</a></li>
+		<li><a href="https://twitter.com/communagir" title="Twitter" target="_blank">
+				<img class="ftrans std" src="../cpeweb/images/header/icone-twitter-w.png" width="16" height="16" alt=""/>
+				<img class="ftrans overlay" src="../cpeweb/images/header/icone-twitter-g.png" width="16" height="16" alt=""/>
+			</a></li>
+	</ul>
+	<a id="home" href="../index.html" title="Accueil">
+		<img class="ftrans std" src="../cpeweb/images/header/icone-home-w.png" width="18" height="16" alt=""/>
+		<img class="ftrans overlay" src="../cpeweb/images/header/icone-home-g.png" width="18" height="16" alt=""/>
+	</a>
+	
+	<a class="linkBack linkOutil" href="../outils.html" title="Retour aux outils">Retour aux <span class="ftrans">outils</span></a>
+	<a class="linkBack linkConseil" href="../conseillers-en-developpement-collectif.html" title="Retour aux conseillers">Retour aux <span class="ftrans">conseillers</span></a>
+	<a class="linkBack linkInc" href="../incontournables.html" title="Retour aux incontournables">Retour aux <span class="ftrans">incontournables</span></a>
+</div>
+			<div class="content">
+				<div class="maxW">
+				
+					<h1>Photoshop </h1>
+					
+					<div class="mediaBox ftrans">
+	<div id="mediaLinks">
+					<a class="mediaLink ftrans shadow radius" href="../medias/2014/09/photoshop.pdf" title="Imprimer" target="_blank">
+				<img class="ftrans std radius" src="../cpeweb/images/section/icone-media-pdf.gif" width="40" height="40" alt=""/>
+				<img class="ftrans overlay radius" src="../cpeweb/images/section/icone-media-pdf-hover.gif" width="40" height="40" alt=""/>
+			</a>
+			<a class="mediaLink ftrans shadow radius" href="../medias/2014/09/photoshop.pdf" title="Imprimer" target="_blank">
+				<img class="ftrans std radius" src="../cpeweb/images/section/icone-media-print.gif" width="40" height="40" alt=""/>
+				<img class="ftrans overlay radius" src="../cpeweb/images/section/icone-media-print-hover.gif" width="40" height="40" alt=""/>
+			</a>
+				<a class="mediaLink ftrans shadow radius" href="mailto:?subject=Les%20outils%20d&rsquo;animation%20de%20Communagir
+				&body=Les%20outils%20d&rsquo;animation%20de%20Communagir%0D%0A
+				Consultez%20l&rsquo;outil%20&laquo;%20Photoshop %20&raquo;%0D%0A
+				http%3A%2F%2Fpouremporter.communagir.org%2Foutils%2Fphotoshop" title="Mail">
+			<img class="ftrans std radius" src="../cpeweb/images/section/icone-media-mail.gif" width="40" height="40" alt=""/>
+			<img class="ftrans overlay radius" src="../cpeweb/images/section/icone-media-mail-hover.gif" width="40" height="40" alt=""/>
+		</a>
+
+		<span class="st_twitter_custom mediaLink ftrans shadow radius" displayText='Tweet'>
+			<img class="ftrans std radius" src="../cpeweb/images/section/icone-media-tw.gif" width="40" height="40" alt=""/>
+			<img class="ftrans overlay radius" src="../cpeweb/images/section/icone-media-tw-hover.gif" width="40" height="40" alt=""/>
+		</span>
+
+		<span style="margin-left: 0;" class="st_facebook_custom mediaLink ftrans shadow radius" displayText="Facebook">
+			<img class="ftrans std radius" src="../cpeweb/images/section/icone-media-fb.gif" width="40" height="40" alt=""/>
+			<img class="ftrans overlay radius" src="../cpeweb/images/section/icone-media-fb-hover.gif" width="40" height="40" alt=""/>
+		</span>		
+	</div>
+	<div class="clearfloat"></div>
+</div>					
+					<h3 style="margin-left: 0; margin-top: 0;">Description sommaire</h3>
+					<div class="dynamic nomargin">
+						<p>Il s’agit de faire réfléchir les participantes et participants sur l’avenir du territoire, à partir d’un portrait existant. En utilisant la métaphore de l’édition photo, cette activité permet la construction collective d’une vision commune d’une situation souhaitée. Elle implique une dimension «&nbsp;bricolage&nbsp;» qui stimule la créativité et favorise la participation de personnes qui sont moins à l’aise avec la parole. Dans le cadre de cette activité, les personnes construisent une photo représentant de façon tangible leur vision souhaitée d’une situation actuelle.</p>
+					</div>
+					<div class="col">
+												<h3><img src="../cpeweb/images/section/icone-objectifs.png" width="32" height="32" alt="Objectifs"/>
+															Objectif principal<br />de l’outil
+													</h3>
+						<ul>							
+															<li>Déclencher ou amorcer les échanges<a href="#" class="objectifsdesc" data-request="1" title="Description"></a></li>
+															<li>Se donner des assises communes<a href="#" class="objectifsdesc" data-request="2" title="Description"></a></li>
+															<li class="selected">Explorer et réfléchir collectivement<a href="#" class="objectifsdesc" data-request="3" title="Description"></a></li>
+															<li>Prioriser et décider ensemble<a href="#" class="objectifsdesc" data-request="4" title="Description"></a></li>
+															<li>Faire des bilans et évaluer<a href="#" class="objectifsdesc" data-request="5" title="Description"></a></li>
+															<li>Lire sa collectivité<a href="#" class="objectifsdesc" data-request="6" title="Description"></a></li>
+														
+						</ul>
+					</div>
+					<div class="col">
+												<h3><img src="../cpeweb/images/section/icone-etapes.png" width="25" height="22" alt="Étapes"/>
+															Étape du processus de<br />planification collective
+													</h3>
+						<ul>							
+															<li>État de situation / diagnostic<a href="#" class="etapesdesc" data-request="1" title="Description"></a></li>
+															<li class="selected">Vision partagée de changement<a href="#" class="etapesdesc" data-request="3" title="Description"></a></li>
+															<li>Planification stratégique<a href="#" class="etapesdesc" data-request="4" title="Description"></a></li>
+															<li>Planification des opérations et de la gouvernance<a href="#" class="etapesdesc" data-request="5" title="Description"></a></li>
+															<li>Mise en œuvre et suivi<a href="#" class="etapesdesc" data-request="6" title="Description"></a></li>
+															<li>Bilan et évaluation stratégique<a href="#" class="etapesdesc" data-request="7" title="Description"></a></li>
+														
+						</ul>
+					</div>
+					<div class="clearfloat"></div>
+					
+											<h3><img src="../cpeweb/images/section/icone-lien.png" width="28" height="31" alt="Les incontournables"/>Les incontournables pour une rencontre réussie</h3>
+						<div class="dynamic">
+							<ul class="incs">
+																	<li><a href="../incontournables/la-validation.html">La validation</a></li>
+																	<li><a href="../incontournables/sinformer-sur-la-culture-et-la-dynamique-du-groupe.html">Connaître la culture et la dynamique du groupe</a></li>
+															</ul>
+						</div>
+						<!--
+						<div class="dynamic">
+							<form method="post" action="http://pouremporter.communagir.org/incontournables" id="incLinkForm">
+								<a id="filterLink" class="backBtn shadow radius ftrans" href="#">
+									2 incontourbales								</a>
+								<input type="hidden" name="outil" value="32" />
+							</form>
+						</div>
+						-->
+										
+					
+											<h3><img src="../cpeweb/images/section/icone-medal.png" width="26" height="36" alt="Prérequis"/>Prérequis</h3>
+						<div class="dynamic">
+							<p>Un portrait de la situation (diagnostic).</p>
+						</div>
+																<h3><img src="../cpeweb/images/section/icone-pen.png" width="28" height="27" alt="Prérequis"/>Matériel requis</h3>
+						<div class="dynamic">
+							<ul>
+	<li>Grands cartons blancs (1 par sous-groupe) en guise de cadre photo géant</li>
+	<li>Matériel de bricolage tels que crayons-feutres, revues, ciseaux, colle, etc. en quantité suffisante pour chaque table de travail</li>
+</ul>
+						</div>
+																<div class="col">
+							<h3><img src="../cpeweb/images/section/icone-filter1.png" width="30" height="18" alt="Taille du groupe"/>Taille du groupe</h3>
+							<div class="infoBoxes">								
+																	<div class="infoBox radius shadow"><p>Moyen<br /><strong>10-30</strong></p></div>
+																	<div class="infoBox radius shadow"><p>Grand<br /><strong>30-75</strong></p></div>
+															</div>
+						</div>
+																<div class="col">
+							<h3><img src="../cpeweb/images/section/icone-filter2.png" width="28" height="28" alt="Durée"/>Durée de l’animation</h3>
+							<div class="infoBoxes"><div id="duree" class="infoBox radius shadow"><p> 2 heures 30 minutes.</p></div></div>
+						</div>
+										<div class="clearfloat"></div>
+											<h3><img src="../cpeweb/images/section/icone-heart.png" width="30" height="26" alt="Valeur ajoutée"/>La valeur ajoutée</h3>
+						<div class="dynamic">
+							<p>Cette activité amène les participantes et participants dans une dynamique conviviale favorisant la création de liens entre les personnes par la création et l’imagination. De plus, elle permet de concrétiser clairement le changement souhaité. Elle obtient particulièrement du succès lors d’activités citoyennes!</p>
+
+<p><strong>François Gaudreault</strong></p>
+
+<p><em>Conseiller en développement collectif</em></p>
+						</div>
+																<h3><img src="../cpeweb/images/section/icone-preparation.png" width="30" height="27" alt="Préparation"/>Préparation</h3>
+						<div class="dynamic">
+							<p>Avec un petit groupe de participantes et participants incluant des personnes ayant contribué au diagnostic actuel, préparez une grande affiche photo du portrait du milieu avec des images percutantes et parlantes ou des mots-clés.</p>
+						</div>
+																<h3><img src="../cpeweb/images/section/icone-pad.png" width="26" height="35" alt="Animation"/>Déroulement de l’animation</h3>
+						<div class="dynamic">
+							<h1>Étapes</h1>
+
+<h2>1. Explication de l’activité&nbsp;(5 min)</h2>
+
+<ul>
+	<li>Montrez un exemple d’utilisation de Photoshop sur une image&nbsp;: avant et après (le «&nbsp;après&nbsp;» étant amélioré).</li>
+	<li>Expliquez que le groupe possède actuellement une photo de la situation actuelle «&nbsp;avant&nbsp;» et qu’ils vont réaliser ensemble la photo «&nbsp;après&nbsp;».</li>
+</ul>
+
+<h2>2. Présentation de la photo actuelle (25 min)&nbsp;</h2>
+
+<ul>
+	<li>Montrez dans un cadre photo géant le portrait du milieu avec des images percutantes et parlantes ou des mots-clés.</li>
+	<li>Demandez aux personnes ayant participé au diagnostic d’expliquer le contenu et de compléter l’information.</li>
+	<li>Invitez les personnes présentes à compléter l’information sur la situation actuelle.</li>
+</ul>
+
+<h2>3. Atelier Photoshop en sous-groupe (45 min)&nbsp;</h2>
+
+<ul>
+	<li>Demandez à chaque groupe de créer une photo modifiée de leur territoire qui représenterait une réalité idéale.</li>
+	<li>Expliquez qu’ils devront produire leur photo sur de grands cartons blancs à partir du matériel de bricolage offert.</li>
+	<li>À la fin de l’atelier, demandez à chaque sous-groupe d’identifier et d’écrire sur leur photo les trois mots qui représentent le plus cette photo modifiée.</li>
+</ul>
+
+<h2>4. Présentation des photos (20 min)</h2>
+
+<ul>
+	<li>Chaque sous-groupe présente sa photo et ses trois mots-clés en 2-3 minutes. Les mots-clés peuvent servir de base à des énoncés de vision.</li>
+	<li>On analyse collectivement si les mêmes mots-clés reviennent.</li>
+	<li>On peut demander aux participantes et participants d’identifier parmi les mots-clés les énoncés prioritaires sur lesquels travailler (ex.&nbsp;: accessibilité, sécurité, égalité, etc.).</li>
+</ul>
+
+<h2>5. Photos actions (45 min)</h2>
+
+<ul>
+	<li>On peut, si on le désire, faire un autre atelier où chaque énoncé de vision priorisé aura sa propre table. Les participantes et participants vont à la table de leur choix et échangent sur des idées d’actions possibles.&nbsp;</li>
+	<li>Les idées qui font consensus doivent être écrites sur des papiers (grandeur d’une photo 4X6) et insérées dans un album photos prévu à cet effet.</li>
+</ul>
+
+<h2>6. Les suites (10 min)</h2>
+
+<ul>
+	<li>
+	<p>Expliquez comment les travaux seront récupérés et quelles sont les prochaines étapes de travail.</p>
+	</li>
+</ul>
+						</div>
+																<h3><img src="../cpeweb/images/section/icone-fire.png" width="24" height="28" alt="Pièges"/>Pièges à éviter</h3>
+						<div class="dynamic">
+							<p>Certaines personnes peuvent percevoir cette activité comme infantilisante compte tenu de la dimension «&nbsp;bricolage&nbsp;» qu’elle suggère. Toutefois, lorsque les objectifs de l’activité sont clairs et que les gens en comprennent le sens et l’utilité, cette résistance tombe facilement. Assurez-vous quand même de bien connaître le groupe avant l’animation et de faire les adaptations nécessaires! Par exemple, vous pouvez utiliser du matériel plus simple (revues uniquement) ou qui ressemble moins à du matériel destiné aux enfants.</p>
+						</div>
+																					<h3><img src="../cpeweb/images/section/icone-references.png" width="32" height="32" alt="Référence"/>Référence</h3>
+						<div class="dynamic">
+							<p><strong><a href="../medias/2014/09/photoshop.pdf">Télécharger la version PDF de l'outil</a></strong></p>
+						</div>
+										
+											<a class="backBtn shadow radius ftrans" href="../outils.html" title="Voir tous les incontournables">Voir tous les outils</a>
+									</div>
+				<div id="spinner"></div>
+			</div>
+		</section>
+		
+		<!-- Ajouter class='lightbox' sur le .container lors du fadeIn -->
+		<div id="info" class="strans">
+			<div class="content maxW">
+				<img src="../cpeweb/images/section/deco.png" width="378" height="378" alt=""/>
+				<div id="infocontent">
+				</div>
+				<a class="backBtn shadow radius ftrans" href="#" title="Retour à l’outil">Retour à l’outil</a>
+			</div>
+		</div>
+	</div>
+</body>
+
+<!-- Mirrored from pouremporter.communagir.org/outils/photoshop by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Jan 2017 09:10:20 GMT -->
+</html>

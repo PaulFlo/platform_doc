@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="fr" >
+
+<!-- Mirrored from pouremporter.communagir.org/outils/le-fisnbowl by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Jan 2017 09:07:11 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<script type="text/javascript" src="http://use.typekit.net/sjy3kiq.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<meta name="author" content="Communagir" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link href="../cpeweb/css/layout.css" rel="stylesheet" type="text/css" />
+<link href="../cpeweb/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<!--[if lt IE 9]><link href="http://pouremporter.communagir.org/cpeweb/css/layoutie.css" rel="stylesheet" type="text/css" /><![endif]-->		
+<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="http://pouremporter.communagir.org/cpeweb/scripts/respond.min.js"></script><![endif]-->		
+<script type="text/javascript" charset="utf-8" src="../cpeweb/scripts/global.js"></script>
+<script type="text/javascript" charset="utf-8" src="../cpeweb/scripts/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../cpeweb/scripts/jquery.easing.1.3.js"></script>
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+		init();
+	});
+	$(window).load( function() {
+		$('body').removeClass('preload');
+	});
+</script>
+
+<!-- Google Analytic -->
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-33014145-1']);
+    _gaq.push(['_addDevId', 'i9k95']); // Google Analyticator App ID with Google
+	_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>	<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "c3b4cbb0-402a-4b69-969c-3696fa048e01", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+
+<!-- todo complete share meta -->
+<meta property="og:title" content="Le fishbowl | Outils d'animation | Communagir" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://pouremporter.communagir.org/outils/le-fisnbowl" />
+<meta property="og:image" content="http://pouremporter.communagir.org/cpeweb/images/logo-fb.png" />
+<meta property="og:description" content="Imaginez-vous en train de regarder trois poissons discutant intensément dans un bocal… Jetez-vous à l’eau vous aussi!" />
+<meta property="og:site_name" content="Communagir" />	
+	<title>Le fishbowl | Outils d'animation | Communagir</title>
+	<meta name="description" content="Imaginez-vous en train de regarder trois poissons discutant intensément dans un bocal… Jetez-vous à l’eau vous aussi!" />
+
+	<script type="text/javascript" charset="utf-8" src="../cpeweb/scripts/spin.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			initSpinner();
+			initOutil();
+
+			$('.objectifsdesc').click ( function() {
+			
+				spinner.spin(spinnerTarget);
+				$.ajax(
+				{					
+					url: 'http://pouremporter.communagir.org/objectifs/' + $(this).attr('data-request'),
+					success: function(newHTML, textStatus, jqXHR)
+					{
+						$('#infocontent').html(newHTML);
+						$('.container').addClass('lightbox');
+						$('#info').fadeIn(400);						
+						spinner.stop();						
+					},
+					error: function(jqXHR, textStatus, errorThrown) {}
+				});
+				
+				return false;
+			})
+			
+			$('.etapesdesc').click ( function() {
+			
+				spinner.spin(spinnerTarget);
+				$.ajax(
+				{					
+					url: 'http://pouremporter.communagir.org/etapes/' + $(this).attr('data-request'),
+					success: function(newHTML, textStatus, jqXHR)
+					{
+						$('#infocontent').html(newHTML);
+						$('.container').addClass('lightbox');
+						$('#info').fadeIn(200);						
+						spinner.stop();						
+					},
+					error: function(jqXHR, textStatus, errorThrown) {}
+				});
+				
+				return false;
+			})			
+		});
+	</script>
+</head>
+<body id="outils" class="preload open" style="background-image: url('../cpeweb/images/section/bg_outils1.jpg');">
+	<div class="container">
+
+		<aside class="strans shadow">
+	<div id="asideTop">
+		<a id="logo" class="ftrans" href="../index.html" title="Accueil">
+			<span>
+				<img id="logoPic" class="strans" src="../cpeweb/images/aside/logo-pic.png" alt="Communagir"/><br />
+				<img id="logoTxt" class="strans" src="../cpeweb/images/aside/logo-communagir.png" width="206" height="52" alt="Communagir"/>
+			</span>
+		</a>
+	</div>
+	<ul>
+		<li id="nav1" >
+			<a class="ftrans" href="../incontournables.html" title="Les incontournables">
+				<div class="centerize">
+					<div class="asidePic">
+						<div class="pics">
+							<img class="ftrans std" src="../cpeweb/images/aside/incontournables.png" alt="Incontournables"/>
+							<img class="ftrans overlay" src="../cpeweb/images/aside/incontournables-w.png" alt="Incontournables"/>
+						</div>
+						<span>Pour une rencontre réussie</span>
+					</div>
+				</div>
+			</a>
+		</li>
+		<li id="nav2" class="active border">
+			<a class="ftrans" href="../outils.html" title="Les outils">
+				<div class="centerize">
+					<div class="asidePic">
+						<div class="pics">
+							<img class="ftrans std" src="../cpeweb/images/aside/outils.png" alt="Outils"/>
+							<img class="ftrans overlay" src="../cpeweb/images/aside/outils-w.png" alt="Outils"/>
+						</div>
+						<span>Les outils</span>
+					</div>
+				</div>
+			</a>
+		</li>
+		<li id="nav3" >
+			<a class="ftrans" href="../conseillers-en-developpement-collectif.html" title="Vos conseillers">
+				<div class="centerize">
+					<div class="asidePic">
+						<div class="pics">
+							<img class="ftrans std" src="../cpeweb/images/aside/conseillers.png" alt="Conseillers"/>
+							<img class="ftrans overlay" src="../cpeweb/images/aside/conseillers-w.png" alt="Conseillers"/>
+						</div>
+						<span>Les conseillers</span>
+					</div>
+				</div>
+			</a>
+		</li>
+	<li id="nav4">
+			<div class="centerize">
+			<span><a title="Contact" href="mailto:info@communagir.org">info@communagir.org</a></span>
+			
+							</div>
+						</li>
+	
+	
+	
+
+	</ul>
+</aside>
+		<section class="strans" role="main">
+			
+			<div id="mobilNav" class="ftrans">
+	<div>
+		<a id="mainNavBtn" href="#" title="Menu"><img src="../cpeweb/images/header/icone-mainnav.jpg" width="50" height="50" alt=""/></a>
+		<a id="mobilLogo" href="../index.html" title="Accueil"><img src="../cpeweb/images/aside/logo-pic.png" width="76" height="48" alt="Communagir"/></a>
+	</div>
+	<ul>
+		<li><a href="../incontournables.html" title="Incontournables"><img style="margin-right: 5px;" src="../cpeweb/images/aside/incontournables.png" width="36" height="40" alt="Incontournables"/>Pour une rencontre réussie</a></li>
+		<li><a href="../outils.html" title="Outils"><img src="../cpeweb/images/aside/outils.png" width="36" height="40" alt="Outils"/>Les outils</a></li>
+		<li><a href="../conseillers-en-developpement-collectif.html" title="Conseillers"><img src="../cpeweb/images/aside/conseillers.png" width="36" height="40" alt="Conseillers"/>Les conseillers</a></li>
+		<li id="last">
+			<a href="http://www.communagir.org/" title="Accéder au site"><img src="../cpeweb/images/header/icone-std-m.png" width="41" height="36" alt="Site web"/></a>
+			<a href="https://www.facebook.com/communagir" target="_blank" title="Facebook"><img src="../cpeweb/images/header/icone-facebook-m.png" width="18" height="36" alt="Facebook"/></a>
+			<a href="https://twitter.com/communagir" target="_blank" title="Twitter"><img src="../cpeweb/images/header/icone-twitter-m.png" width="42" height="34" alt="Twitter"/></a>
+		</li>
+	</ul>
+</div>			<div id="dtNav" class="ftrans">
+	<ul>
+		<li class="md-scr-hide"><a style="width: auto;" href="http://www.communagir.org/" title="Site web">Accéder au site web de <span class="ftrans">Communagir</span></a></li>
+		<li class="md-scr-show"><a href="http://www.communagir.org/" title="Site Web">
+				<img class="ftrans std" src="../cpeweb/images/header/icone-std-w.png" width="16" height="16" alt=""/>
+				<img class="ftrans overlay" src="../cpeweb/images/header/icone-std-g.png" width="16" height="16" alt=""/>
+			</a></li>
+		<li><a href="https://www.facebook.com/communagir" title="Facebook" target="_blank">
+				<img class="ftrans std" src="../cpeweb/images/header/icone-facebook-w.png" width="16" height="16" alt=""/>
+				<img class="ftrans overlay" src="../cpeweb/images/header/icone-facebook-g.png" width="16" height="16" alt=""/>
+			</a></li>
+		<li><a href="https://twitter.com/communagir" title="Twitter" target="_blank">
+				<img class="ftrans std" src="../cpeweb/images/header/icone-twitter-w.png" width="16" height="16" alt=""/>
+				<img class="ftrans overlay" src="../cpeweb/images/header/icone-twitter-g.png" width="16" height="16" alt=""/>
+			</a></li>
+	</ul>
+	<a id="home" href="../index.html" title="Accueil">
+		<img class="ftrans std" src="../cpeweb/images/header/icone-home-w.png" width="18" height="16" alt=""/>
+		<img class="ftrans overlay" src="../cpeweb/images/header/icone-home-g.png" width="18" height="16" alt=""/>
+	</a>
+	
+	<a class="linkBack linkOutil" href="../outils.html" title="Retour aux outils">Retour aux <span class="ftrans">outils</span></a>
+	<a class="linkBack linkConseil" href="../conseillers-en-developpement-collectif.html" title="Retour aux conseillers">Retour aux <span class="ftrans">conseillers</span></a>
+	<a class="linkBack linkInc" href="../incontournables.html" title="Retour aux incontournables">Retour aux <span class="ftrans">incontournables</span></a>
+</div>
+			<div class="content">
+				<div class="maxW">
+				
+					<h1>Le fishbowl</h1>
+					
+					<div class="mediaBox ftrans">
+	<div id="mediaLinks">
+					<a class="mediaLink ftrans shadow radius" href="../medias/2014/09/fishbowl.pdf" title="Imprimer" target="_blank">
+				<img class="ftrans std radius" src="../cpeweb/images/section/icone-media-pdf.gif" width="40" height="40" alt=""/>
+				<img class="ftrans overlay radius" src="../cpeweb/images/section/icone-media-pdf-hover.gif" width="40" height="40" alt=""/>
+			</a>
+			<a class="mediaLink ftrans shadow radius" href="../medias/2014/09/fishbowl.pdf" title="Imprimer" target="_blank">
+				<img class="ftrans std radius" src="../cpeweb/images/section/icone-media-print.gif" width="40" height="40" alt=""/>
+				<img class="ftrans overlay radius" src="../cpeweb/images/section/icone-media-print-hover.gif" width="40" height="40" alt=""/>
+			</a>
+				<a class="mediaLink ftrans shadow radius" href="mailto:?subject=Les%20outils%20d&rsquo;animation%20de%20Communagir
+				&body=Les%20outils%20d&rsquo;animation%20de%20Communagir%0D%0A
+				Consultez%20l&rsquo;outil%20&laquo;%20Le fishbowl%20&raquo;%0D%0A
+				http%3A%2F%2Fpouremporter.communagir.org%2Foutils%2Fle-fisnbowl" title="Mail">
+			<img class="ftrans std radius" src="../cpeweb/images/section/icone-media-mail.gif" width="40" height="40" alt=""/>
+			<img class="ftrans overlay radius" src="../cpeweb/images/section/icone-media-mail-hover.gif" width="40" height="40" alt=""/>
+		</a>
+
+		<span class="st_twitter_custom mediaLink ftrans shadow radius" displayText='Tweet'>
+			<img class="ftrans std radius" src="../cpeweb/images/section/icone-media-tw.gif" width="40" height="40" alt=""/>
+			<img class="ftrans overlay radius" src="../cpeweb/images/section/icone-media-tw-hover.gif" width="40" height="40" alt=""/>
+		</span>
+
+		<span style="margin-left: 0;" class="st_facebook_custom mediaLink ftrans shadow radius" displayText="Facebook">
+			<img class="ftrans std radius" src="../cpeweb/images/section/icone-media-fb.gif" width="40" height="40" alt=""/>
+			<img class="ftrans overlay radius" src="../cpeweb/images/section/icone-media-fb-hover.gif" width="40" height="40" alt=""/>
+		</span>		
+	</div>
+	<div class="clearfloat"></div>
+</div>					
+					<h3 style="margin-left: 0; margin-top: 0;">Description sommaire</h3>
+					<div class="dynamic nomargin">
+						<p>L’idée de base de cette activité est de créer une conversation avec un grand groupe autour d’une question ou d’un sujet précis. Il s’agit de réfléchir sur&nbsp; une question ou un enjeu afin de l’approfondir ou de l’explorer, en misant sur l’échange par le biais d’une discussion ouverte et non dirigée. Cet outil peut être utilisé dans plusieurs contextes participatifs tels que des ateliers, conférences, réunions organisationnelles et assemblées publiques. Il a comme objectif que l’ensemble de la discussion se structure toute seule.&nbsp;</p>
+					</div>
+					<div class="col">
+												<h3><img src="../cpeweb/images/section/icone-objectifs.png" width="32" height="32" alt="Objectifs"/>
+															Objectif principal<br />de l’outil
+													</h3>
+						<ul>							
+															<li>Déclencher ou amorcer les échanges<a href="#" class="objectifsdesc" data-request="1" title="Description"></a></li>
+															<li>Se donner des assises communes<a href="#" class="objectifsdesc" data-request="2" title="Description"></a></li>
+															<li class="selected">Explorer et réfléchir collectivement<a href="#" class="objectifsdesc" data-request="3" title="Description"></a></li>
+															<li>Prioriser et décider ensemble<a href="#" class="objectifsdesc" data-request="4" title="Description"></a></li>
+															<li>Faire des bilans et évaluer<a href="#" class="objectifsdesc" data-request="5" title="Description"></a></li>
+															<li>Lire sa collectivité<a href="#" class="objectifsdesc" data-request="6" title="Description"></a></li>
+														
+						</ul>
+					</div>
+					<div class="col">
+												<h3><img src="../cpeweb/images/section/icone-etapes.png" width="25" height="22" alt="Étapes"/>
+															Étape du processus de<br />planification collective
+													</h3>
+						<ul>							
+															<li>État de situation / diagnostic<a href="#" class="etapesdesc" data-request="1" title="Description"></a></li>
+															<li>Vision partagée de changement<a href="#" class="etapesdesc" data-request="3" title="Description"></a></li>
+															<li>Planification stratégique<a href="#" class="etapesdesc" data-request="4" title="Description"></a></li>
+															<li>Planification des opérations et de la gouvernance<a href="#" class="etapesdesc" data-request="5" title="Description"></a></li>
+															<li>Mise en œuvre et suivi<a href="#" class="etapesdesc" data-request="6" title="Description"></a></li>
+															<li>Bilan et évaluation stratégique<a href="#" class="etapesdesc" data-request="7" title="Description"></a></li>
+														
+						</ul>
+					</div>
+					<div class="clearfloat"></div>
+					
+											<h3><img src="../cpeweb/images/section/icone-lien.png" width="28" height="31" alt="Les incontournables"/>Les incontournables pour une rencontre réussie</h3>
+						<div class="dynamic">
+							<ul class="incs">
+																	<li><a href="../incontournables/la-pleniere.html">La plénière</a></li>
+															</ul>
+						</div>
+						<!--
+						<div class="dynamic">
+							<form method="post" action="http://pouremporter.communagir.org/incontournables" id="incLinkForm">
+								<a id="filterLink" class="backBtn shadow radius ftrans" href="#">
+									1 incontourbale								</a>
+								<input type="hidden" name="outil" value="24" />
+							</form>
+						</div>
+						-->
+										
+					
+											<h3><img src="../cpeweb/images/section/icone-medal.png" width="26" height="36" alt="Prérequis"/>Prérequis</h3>
+						<div class="dynamic">
+							<p>Avoir un grand thème ou une grande question qui interpelle les gens et stimule la conversation.&nbsp;</p>
+						</div>
+																<h3><img src="../cpeweb/images/section/icone-pen.png" width="28" height="27" alt="Prérequis"/>Matériel requis</h3>
+						<div class="dynamic">
+							<ul>
+	<li>Feuilles papier-affiche</li>
+	<li>Grille de notes pour les observateurs</li>
+	<li>Tablette de feuilles <em>Post-it</em> de très grand format (grandeur papier-affiche)</li>
+	<li>Marqueurs&nbsp;</li>
+</ul>
+						</div>
+																<div class="col">
+							<h3><img src="../cpeweb/images/section/icone-filter1.png" width="30" height="18" alt="Taille du groupe"/>Taille du groupe</h3>
+							<div class="infoBoxes">								
+																	<div class="infoBox radius shadow"><p>Moyen<br /><strong>10-30</strong></p></div>
+																	<div class="infoBox radius shadow"><p>Grand<br /><strong>30-75</strong></p></div>
+																	<div class="infoBox radius shadow"><p>T-grand<br /><strong>75+</strong></p></div>
+															</div>
+						</div>
+																<div class="col">
+							<h3><img src="../cpeweb/images/section/icone-filter2.png" width="28" height="28" alt="Durée"/>Durée de l’animation</h3>
+							<div class="infoBoxes"><div id="duree" class="infoBox radius shadow"><p>60 à 90 minutes.</p></div></div>
+						</div>
+										<div class="clearfloat"></div>
+											<h3><img src="../cpeweb/images/section/icone-heart.png" width="30" height="26" alt="Valeur ajoutée"/>La valeur ajoutée</h3>
+						<div class="dynamic">
+							<p>Le <em>Fishbowl</em> est intéressant car c’est une formule que peu de gens ont expérimentée. En plus d’assurer une discussion transparente, le <em>Fishbowl</em> installe un échange dynamique et efficace. Une fois les règles bien expliquées, l’animateur joue un rôle plus discret d’observateur et de recadrage, ce qui permet de donner la responsabilité de l’échange aux participantes et participants.</p>
+
+<p><strong>François Gaudreault</strong></p>
+
+<p><em>Conseiller en développement collectif</em></p>
+						</div>
+																<h3><img src="../cpeweb/images/section/icone-preparation.png" width="30" height="27" alt="Préparation"/>Préparation</h3>
+						<div class="dynamic">
+							<p>La salle est préparée avec deux cercles concentriques de chaises.</p>
+
+<p>On place 5 chaises au centre et les autres sont placées à l’extérieur (pour les groupes plus importants, on peut aller jusqu’à 8 chaises au centre).</p>
+
+<p><img alt="" src="../medias/2014/09/fishbowl.jpg" style="height:725px; width:545px" /></p>
+
+<p>Avoir préparé au moins 2 questions. &nbsp;Par exemple&nbsp;:</p>
+
+<ul>
+	<li>Quelles seraient les conditions à mettre en place ou les solutions à envisager pour relever ce défi?</li>
+	<li>Qui pourrait vous appuyer et contribuer à relever ce défi et comment?</li>
+</ul>
+						</div>
+																<h3><img src="../cpeweb/images/section/icone-pad.png" width="26" height="35" alt="Animation"/>Déroulement de l’animation</h3>
+						<div class="dynamic">
+							<p>&nbsp;</p>
+
+<h1>Étapes</h1>
+
+<h2>1. Invitez 4 personnes à s’installer dans le cercle du centre en laissant une chaise vide.</h2>
+
+<p>Elles auront comme tâche d’être les premières à discuter de la question qui leur sera lancée (identifiez les personnes à l’avance pour le premier tour).</p>
+
+<h2>2. Expliquez au groupe les consignes à suivre (5 min)</h2>
+
+<ul>
+	<li>Une première question sera lancée au groupe du centre afin de démarrer une discussion entre eux.</li>
+	<li>Les personnes qui souhaitent se joindre à la discussion devront se lever et aller s’asseoir sur la chaise vide et participer à l’échange.</li>
+	<li>En contrepartie, une des personnes assises au centre devra se lever et aller s’asseoir sur une chaise disponible dans le cercle extérieur.</li>
+	<li>Les personnes extérieures sont également invitées à noter leurs observations sur la grille de notes qui leur a été fournie.</li>
+</ul>
+
+<h2>3. Démarrez la discussion en posant la première question (20 min)</h2>
+
+<ul>
+	<li>Invitez les gens au centre à y répondre comme s’ils discutaient. Il ne faut pas que ceux-ci y répondent à tour de rôle, mais plutôt dans le cadre d’une discussion, d’un échange.</li>
+	<li>Soyez le plus discret possible et intervenez seulement pour recadrer les échanges si on s’éloigne trop du sujet de discussion.</li>
+	<li>Après 20 minutes environ, arrêtez la discussion.</li>
+</ul>
+
+<h2>4. Posez la deuxième question (20 min)</h2>
+
+<ul>
+	<li>Invitez les gens qui le souhaitent à former le premier quatuor de discussion et on repart l’activité.</li>
+</ul>
+
+<h2>5. Synthèse et bonification&nbsp;: retour en grand groupe avec les participantes et participants observateurs (15 min)&nbsp;</h2>
+
+<ul>
+	<li>Invitez les gens à s’exprimer sur ce qu’ils ont noté.</li>
+	<li>Notez le tout sur le papier-affiche (très grands <em>Post-it</em>).&nbsp;</li>
+</ul>
+						</div>
+																<h3><img src="../cpeweb/images/section/icone-fire.png" width="24" height="28" alt="Pièges"/>Pièges à éviter</h3>
+						<div class="dynamic">
+							<ul>
+	<li>Prendre part à la discussion. Il faut que ce soit un échange libre et fluide où il y a le moins d’interruption possible.</li>
+	<li>Escamoter la partie «&nbsp;synthèse&nbsp;» par manque de temps! C’est pourtant une partie essentielle de cette animation. En effet, les participantes et participants peuvent avoir l’impression qu’ils ont été incohérents et qu’ils sont sortis du sujet, mais c’est rarement le cas. La synthèse vient faire ressortir les éléments essentiels et permet une certaine convergence.&nbsp;</li>
+</ul>
+						</div>
+																<h3><img src="../cpeweb/images/section/icone-suggestions.png" width="30" height="30" alt="Suggestion et variante"/>Suggestions et variantes</h3>
+						<div class="dynamic">
+							<p>Utilisez un tableau blanc ou 5 à 6 feuilles de papier-affiche collées sur un mur et notez vos observations au fur et à mesure que la discussion se déroule. C’est une façon de faciliter la synthèse par la suite!</p>
+						</div>
+																<h3><img src="../cpeweb/images/section/icone-references.png" width="32" height="32" alt="Référence"/>Référence</h3>
+						<div class="dynamic">
+							<p><strong><a href="../medias/2014/09/fishbowl.pdf">Télécharger la version PDF de l'outil</a></strong></p>
+
+<p>SLOCUM, Nikki, ELLIOT, Janice, HEESTERBEEK, Sara et Carolyn J. Lukensmeyer. Méthodes participatives&nbsp;: Un guide pour l’utilisateur, 2006, Fondation Roi Baudouin, 204 pages, http://www.kbs-frb.be/publication.aspx?id=294864&amp;langtype=2060.</p>
+						</div>
+										
+											<a class="backBtn shadow radius ftrans" href="../outils.html" title="Voir tous les incontournables">Voir tous les outils</a>
+									</div>
+				<div id="spinner"></div>
+			</div>
+		</section>
+		
+		<!-- Ajouter class='lightbox' sur le .container lors du fadeIn -->
+		<div id="info" class="strans">
+			<div class="content maxW">
+				<img src="../cpeweb/images/section/deco.png" width="378" height="378" alt=""/>
+				<div id="infocontent">
+				</div>
+				<a class="backBtn shadow radius ftrans" href="#" title="Retour à l’outil">Retour à l’outil</a>
+			</div>
+		</div>
+	</div>
+</body>
+
+<!-- Mirrored from pouremporter.communagir.org/outils/le-fisnbowl by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Jan 2017 09:07:46 GMT -->
+</html>

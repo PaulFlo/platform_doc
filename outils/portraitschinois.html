@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr" >
+
+<!-- Mirrored from pouremporter.communagir.org/outils/reveler-les-competences by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Jan 2017 08:43:07 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<script type="text/javascript" src="http://use.typekit.net/sjy3kiq.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<meta name="author" content="Communagir" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link href="../cpeweb/css/layout.css" rel="stylesheet" type="text/css" />
+<link href="../cpeweb/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<!--[if lt IE 9]><link href="http://pouremporter.communagir.org/cpeweb/css/layoutie.css" rel="stylesheet" type="text/css" /><![endif]-->		
+<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="http://pouremporter.communagir.org/cpeweb/scripts/respond.min.js"></script><![endif]-->		
+<script type="text/javascript" charset="utf-8" src="../cpeweb/scripts/global.js"></script>
+<script type="text/javascript" charset="utf-8" src="../cpeweb/scripts/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../cpeweb/scripts/jquery.easing.1.3.js"></script>
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+		init();
+	});
+	$(window).load( function() {
+		$('body').removeClass('preload');
+	});
+</script>
+
+<!-- Google Analytic -->
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-33014145-1']);
+    _gaq.push(['_addDevId', 'i9k95']); // Google Analyticator App ID with Google
+	_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>	<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "c3b4cbb0-402a-4b69-969c-3696fa048e01", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+
+<!-- todo complete share meta -->
+<meta property="og:title" content="Révélez vos compétences! | Outil d'animation | Communagir" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://pouremporter.communagir.org/outils/reveler-les-competences" />
+<meta property="og:image" content="http://pouremporter.communagir.org/cpeweb/images/logo-fb.png" />
+<meta property="og:description" content="S’il faut beaucoup de compétences pour coordonner et animer un groupe, il en faut aussi pour participer à cet agir-ensemble!" />
+<meta property="og:site_name" content="Communagir" />	
+	<title>Exercice d'atelier</title>
+	<meta name="description" content="S’il faut beaucoup de compétences pour coordonner et animer un groupe, il en faut aussi pour participer à cet agir-ensemble!" />
+
+	<script type="text/javascript" charset="utf-8" src="../cpeweb/scripts/spin.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			initSpinner();
+			initOutil();
+
+			$('.objectifsdesc').click ( function() {
+			
+				spinner.spin(spinnerTarget);
+				$.ajax(
+				{					
+					url: 'http://pouremporter.communagir.org/objectifs/' + $(this).attr('data-request'),
+					success: function(newHTML, textStatus, jqXHR)
+					{
+						$('#infocontent').html(newHTML);
+						$('.container').addClass('lightbox');
+						$('#info').fadeIn(400);						
+						spinner.stop();						
+					},
+					error: function(jqXHR, textStatus, errorThrown) {}
+				});
+				
+				return false;
+			})
+			
+			$('.etapesdesc').click ( function() {
+			
+				spinner.spin(spinnerTarget);
+				$.ajax(
+				{					
+					url: 'http://pouremporter.communagir.org/etapes/' + $(this).attr('data-request'),
+					success: function(newHTML, textStatus, jqXHR)
+					{
+						$('#infocontent').html(newHTML);
+						$('.container').addClass('lightbox');
+						$('#info').fadeIn(200);						
+						spinner.stop();						
+					},
+					error: function(jqXHR, textStatus, errorThrown) {}
+				});
+				
+				return false;
+			})			
+		});
+	</script>
+</head>
+<body id="outils" class="preload open" style="background-image: url('../cpeweb/images/section/bg_outils3.jpg');">
+	<div class="container">
+
+		<aside class="strans shadow">
+	<div id="asideTop">
+		<a id="logo" class="ftrans" href="../outils.html" title="Accueil">
+			<span>
+				<img id="logoTxt" class="strans" src="../cpeweb/images/aside/logo-entreepublic.png" width="206" height="auto" alt="Communagir"/>
+			</span>
+		</a>
+	</div>
+	<ul>
+		
+		<li id="nav2" class="active border">
+			<a class="ftrans" href="../outils.html" title="Les outils">
+				<div class="centerize">
+					<div class="asidePic">
+						<div class="pics">
+							<img class="ftrans std" src="../cpeweb/images/aside/outils.png" alt="Outils"/>
+							<img class="ftrans overlay" src="../cpeweb/images/aside/outils-w.png" alt="Outils"/>
+						</div>
+						<span>Ateliers</span>
+					</div>
+				</div>
+			</a>
+		</li>
+		
+	
+	
+	
+
+	</ul>
+</aside>
+		<section class="strans" role="main">
+			
+			<div id="mobilNav" class="ftrans">
+	<div>
+		<a id="mainNavBtn" href="#" title="Menu"><img src="../cpeweb/images/header/arrow-filter.png" width="50" height="50" alt=""/></a>
+		<a id="mobilLogo" href="../index.html" title="Accueil"><img src="../cpeweb/images/aside/logo-entreepublic.png" width="206" height="auto" alt="Entrée Public"/></a>
+	</div>
+	<ul>
+		<li><a href="../outils.html" title="Outils"><img src="../cpeweb/images/aside/outils.png" width="36" height="40" alt="Outils"/>Les outils</a></li>
+	</ul>
+</div>			<div id="dtNav" class="ftrans">
+	
+	<a id="home" href="../index.html" title="Accueil">
+		<img class="ftrans std" src="../cpeweb/images/header/arrow-filter.png" width="30" height="30" alt=""/>
+		<img class="ftrans overlay" src="../cpeweb/images/header/arrow-filter.png" width="30" height="30" alt=""/>
+	</a>
+	
+
+</div>
+			<div class="content">
+				<div class="maxW">
+				
+					<h1>Portraits Chinois</h1>
+					
+					
+	<div class="clearfloat"></div>
+                    <div class="mediaBox ftrans">
+	<div id="mediaLinks">
+				<a class="mediaLink ftrans shadow radius" href="#" title="Mail">
+			<img class="ftrans std radius" src="../cpeweb/images/section/icone-dl.png" width="auto" height="40" alt=""/>
+			<img class="ftrans overlay radius" src="../cpeweb/images/section/icone-dl2.png" width="auto" height="40" alt=""/>
+		</a>
+
+	
+
+			
+	</div>
+                    </div>
+</div>		
+            </div>
+					<h3 style="margin-left: 0; margin-top: 0;">Description</h3>
+                
+					<div class="dynamic nomargin">
+						<p>Chaque participant réalise son portrait chinois.</p>
+					</div>
+					<div class="col">
+												<h3><img src="../cpeweb/images/section/icone-objectifs.png" width="32" height="32" alt="Objectifs"/>
+															Objectifs principaux<br />
+													</h3>
+						<ul>							
+															<li class="selected"> Se connaître</li>
+															<li class="selected"> Identifier le rôle de chaque participant</li>
+															
+														
+						</ul>
+					</div>
+					<div class="col">
+												<h3><img src="../cpeweb/images/section/icone-etapes.png" width="25" height="22" alt="Étapes"/>
+															Étapes du processus 
+													</h3>
+						<ul>							
+															<li class="selected">Introduction</li>
+												
+														
+						</ul>
+					</div>
+					<div class="clearfloat"></div>
+					
+											
+					
+						<!--
+						<div class="dynamic">
+							<form method="post" action="http://pouremporter.communagir.org/incontournables" id="incLinkForm">
+								<a id="filterLink" class="backBtn shadow radius ftrans" href="#">
+									5 incontourbales								</a>
+								<input type="hidden" name="outil" value="59" />
+							</form>
+						</div>
+						-->
+										
+					
+											<h3><img src="../cpeweb/images/section/icone-medal.png" width="26" height="36" alt="Prérequis"/>Forme</h3>
+						<div class="dynamic">
+							<p>Tour de table</p>
+						</div>
+																<h3><img src="../cpeweb/images/section/icone-pen.png" width="28" height="27" alt="Prérequis"/>Déroulé</h3>
+						<div class="dynamic">
+							<ul>
+	<li>Chaque participant prend 2min pour choisir un mot clef qui reflétera son état d’esprit. 
+</li>
+	<li>Chaque participant prend la parole pour se présenter selon ce format : Prénom / Rôle dans le projet / mot clef. </li>
+	<li>Le médiateur prend en note les mots clefs. </li>
+</ul>
+						</div>
+				
+                    
+                    <div class="col">
+							<h3><img src="../cpeweb/images/section/icone-filter1.png" width="30" height="18" alt="Taille du groupe"/>Taille du groupe</h3>
+							<div class="infoBoxes">								
+								<div class="infoBox radius shadow"><p>Petit<br /><strong>2-10</strong></p></div>
+						</div>
+                    </div>
+				<div class="col">
+							<h3><img src="../cpeweb/images/section/icone-filter2.png" width="28" height="28" alt="Durée"/>Durée de l’animation</h3>
+							<div class="infoBoxes"><div id="duree" class="infoBox radius shadow"><p>15 minutes</p></div></div>
+						</div>
+				
+										
+				<div id="spinner"></div>
+			</div>
+		</section>
+		
+		<!-- Ajouter class='lightbox' sur le .container lors du fadeIn -->
+		<div id="info" class="strans">
+			<div class="content maxW">
+				<img src="../cpeweb/images/section/deco.png" width="378" height="378" alt=""/>
+				<div id="infocontent">
+				</div>
+				<a class="backBtn shadow radius ftrans" href="#" title="Retour à l’outil">Retour à l’outil</a>
+			</div>
+		</div>
+	</div>
+</body>
+
+<!-- Mirrored from pouremporter.communagir.org/outils/reveler-les-competences by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Jan 2017 08:44:22 GMT -->
+</html>

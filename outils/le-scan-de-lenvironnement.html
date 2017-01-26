@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="fr" >
+
+<!-- Mirrored from pouremporter.communagir.org/outils/le-scan-de-lenvironnement by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Jan 2017 08:48:41 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<script type="text/javascript" src="http://use.typekit.net/sjy3kiq.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<meta name="author" content="Communagir" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link href="../cpeweb/css/layout.css" rel="stylesheet" type="text/css" />
+<link href="../cpeweb/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<!--[if lt IE 9]><link href="http://pouremporter.communagir.org/cpeweb/css/layoutie.css" rel="stylesheet" type="text/css" /><![endif]-->		
+<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="http://pouremporter.communagir.org/cpeweb/scripts/respond.min.js"></script><![endif]-->		
+<script type="text/javascript" charset="utf-8" src="../cpeweb/scripts/global.js"></script>
+<script type="text/javascript" charset="utf-8" src="../cpeweb/scripts/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../cpeweb/scripts/jquery.easing.1.3.js"></script>
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+		init();
+	});
+	$(window).load( function() {
+		$('body').removeClass('preload');
+	});
+</script>
+
+<!-- Google Analytic -->
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-33014145-1']);
+    _gaq.push(['_addDevId', 'i9k95']); // Google Analyticator App ID with Google
+	_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>	<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "c3b4cbb0-402a-4b69-969c-3696fa048e01", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+
+<!-- todo complete share meta -->
+<meta property="og:title" content="Le scan de l'environnement | Outil d'animation" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://pouremporter.communagir.org/outils/le-scan-de-lenvironnement" />
+<meta property="og:image" content="http://pouremporter.communagir.org/cpeweb/images/logo-fb.png" />
+<meta property="og:description" content="Lire son environnement et comprendre comment il nous affecte pour être en mesure d’en tenir compte dans le changement!" />
+<meta property="og:site_name" content="Communagir" />	
+	<title>Le scan de l'environnement | Outil d'animation</title>
+	<meta name="description" content="Lire son environnement et comprendre comment il nous affecte pour être en mesure d’en tenir compte dans le changement!" />
+
+	<script type="text/javascript" charset="utf-8" src="../cpeweb/scripts/spin.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			initSpinner();
+			initOutil();
+
+			$('.objectifsdesc').click ( function() {
+			
+				spinner.spin(spinnerTarget);
+				$.ajax(
+				{					
+					url: 'http://pouremporter.communagir.org/objectifs/' + $(this).attr('data-request'),
+					success: function(newHTML, textStatus, jqXHR)
+					{
+						$('#infocontent').html(newHTML);
+						$('.container').addClass('lightbox');
+						$('#info').fadeIn(400);						
+						spinner.stop();						
+					},
+					error: function(jqXHR, textStatus, errorThrown) {}
+				});
+				
+				return false;
+			})
+			
+			$('.etapesdesc').click ( function() {
+			
+				spinner.spin(spinnerTarget);
+				$.ajax(
+				{					
+					url: 'http://pouremporter.communagir.org/etapes/' + $(this).attr('data-request'),
+					success: function(newHTML, textStatus, jqXHR)
+					{
+						$('#infocontent').html(newHTML);
+						$('.container').addClass('lightbox');
+						$('#info').fadeIn(200);						
+						spinner.stop();						
+					},
+					error: function(jqXHR, textStatus, errorThrown) {}
+				});
+				
+				return false;
+			})			
+		});
+	</script>
+</head>
+<body id="outils" class="preload open" style="background-image: url('../cpeweb/images/section/bg_outils2.jpg');">
+	<div class="container">
+
+		<aside class="strans shadow">
+	<div id="asideTop">
+		<a id="logo" class="ftrans" href="../index.html" title="Accueil">
+			<span>
+				<img id="logoPic" class="strans" src="../cpeweb/images/aside/logo-pic.png" alt="Communagir"/><br />
+				<img id="logoTxt" class="strans" src="../cpeweb/images/aside/logo-communagir.png" width="206" height="52" alt="Communagir"/>
+			</span>
+		</a>
+	</div>
+	<ul>
+		<li id="nav1" >
+			<a class="ftrans" href="../incontournables.html" title="Les incontournables">
+				<div class="centerize">
+					<div class="asidePic">
+						<div class="pics">
+							<img class="ftrans std" src="../cpeweb/images/aside/incontournables.png" alt="Incontournables"/>
+							<img class="ftrans overlay" src="../cpeweb/images/aside/incontournables-w.png" alt="Incontournables"/>
+						</div>
+						<span>Pour une rencontre réussie</span>
+					</div>
+				</div>
+			</a>
+		</li>
+		<li id="nav2" class="active border">
+			<a class="ftrans" href="../outils.html" title="Les outils">
+				<div class="centerize">
+					<div class="asidePic">
+						<div class="pics">
+							<img class="ftrans std" src="../cpeweb/images/aside/outils.png" alt="Outils"/>
+							<img class="ftrans overlay" src="../cpeweb/images/aside/outils-w.png" alt="Outils"/>
+						</div>
+						<span>Les outils</span>
+					</div>
+				</div>
+			</a>
+		</li>
+		<li id="nav3" >
+			<a class="ftrans" href="../conseillers-en-developpement-collectif.html" title="Vos conseillers">
+				<div class="centerize">
+					<div class="asidePic">
+						<div class="pics">
+							<img class="ftrans std" src="../cpeweb/images/aside/conseillers.png" alt="Conseillers"/>
+							<img class="ftrans overlay" src="../cpeweb/images/aside/conseillers-w.png" alt="Conseillers"/>
+						</div>
+						<span>Les conseillers</span>
+					</div>
+				</div>
+			</a>
+		</li>
+	<li id="nav4">
+			<div class="centerize">
+			<span><a title="Contact" href="mailto:info@communagir.org">info@communagir.org</a></span>
+			
+							</div>
+						</li>
+	
+	
+	
+
+	</ul>
+</aside>
+		<section class="strans" role="main">
+			
+			<div id="mobilNav" class="ftrans">
+	<div>
+		<a id="mainNavBtn" href="#" title="Menu"><img src="../cpeweb/images/header/icone-mainnav.jpg" width="50" height="50" alt=""/></a>
+		<a id="mobilLogo" href="../index.html" title="Accueil"><img src="../cpeweb/images/aside/logo-pic.png" width="76" height="48" alt="Communagir"/></a>
+	</div>
+	<ul>
+		<li><a href="../incontournables.html" title="Incontournables"><img style="margin-right: 5px;" src="../cpeweb/images/aside/incontournables.png" width="36" height="40" alt="Incontournables"/>Pour une rencontre réussie</a></li>
+		<li><a href="../outils.html" title="Outils"><img src="../cpeweb/images/aside/outils.png" width="36" height="40" alt="Outils"/>Les outils</a></li>
+		<li><a href="../conseillers-en-developpement-collectif.html" title="Conseillers"><img src="../cpeweb/images/aside/conseillers.png" width="36" height="40" alt="Conseillers"/>Les conseillers</a></li>
+		<li id="last">
+			<a href="http://www.communagir.org/" title="Accéder au site"><img src="../cpeweb/images/header/icone-std-m.png" width="41" height="36" alt="Site web"/></a>
+			<a href="https://www.facebook.com/communagir" target="_blank" title="Facebook"><img src="../cpeweb/images/header/icone-facebook-m.png" width="18" height="36" alt="Facebook"/></a>
+			<a href="https://twitter.com/communagir" target="_blank" title="Twitter"><img src="../cpeweb/images/header/icone-twitter-m.png" width="42" height="34" alt="Twitter"/></a>
+		</li>
+	</ul>
+</div>			<div id="dtNav" class="ftrans">
+	<ul>
+		<li class="md-scr-hide"><a style="width: auto;" href="http://www.communagir.org/" title="Site web">Accéder au site web de <span class="ftrans">Communagir</span></a></li>
+		<li class="md-scr-show"><a href="http://www.communagir.org/" title="Site Web">
+				<img class="ftrans std" src="../cpeweb/images/header/icone-std-w.png" width="16" height="16" alt=""/>
+				<img class="ftrans overlay" src="../cpeweb/images/header/icone-std-g.png" width="16" height="16" alt=""/>
+			</a></li>
+		<li><a href="https://www.facebook.com/communagir" title="Facebook" target="_blank">
+				<img class="ftrans std" src="../cpeweb/images/header/icone-facebook-w.png" width="16" height="16" alt=""/>
+				<img class="ftrans overlay" src="../cpeweb/images/header/icone-facebook-g.png" width="16" height="16" alt=""/>
+			</a></li>
+		<li><a href="https://twitter.com/communagir" title="Twitter" target="_blank">
+				<img class="ftrans std" src="../cpeweb/images/header/icone-twitter-w.png" width="16" height="16" alt=""/>
+				<img class="ftrans overlay" src="../cpeweb/images/header/icone-twitter-g.png" width="16" height="16" alt=""/>
+			</a></li>
+	</ul>
+	<a id="home" href="../index.html" title="Accueil">
+		<img class="ftrans std" src="../cpeweb/images/header/icone-home-w.png" width="18" height="16" alt=""/>
+		<img class="ftrans overlay" src="../cpeweb/images/header/icone-home-g.png" width="18" height="16" alt=""/>
+	</a>
+	
+	<a class="linkBack linkOutil" href="../outils.html" title="Retour aux outils">Retour aux <span class="ftrans">outils</span></a>
+	<a class="linkBack linkConseil" href="../conseillers-en-developpement-collectif.html" title="Retour aux conseillers">Retour aux <span class="ftrans">conseillers</span></a>
+	<a class="linkBack linkInc" href="../incontournables.html" title="Retour aux incontournables">Retour aux <span class="ftrans">incontournables</span></a>
+</div>
+			<div class="content">
+				<div class="maxW">
+				
+					<h1>Le scan de l'environnement</h1>
+					
+					<div class="mediaBox ftrans">
+	<div id="mediaLinks">
+					<a class="mediaLink ftrans shadow radius" href="../medias/2016/05/scan%20de%20lenvironnement.pdf" title="Imprimer" target="_blank">
+				<img class="ftrans std radius" src="../cpeweb/images/section/icone-media-pdf.gif" width="40" height="40" alt=""/>
+				<img class="ftrans overlay radius" src="../cpeweb/images/section/icone-media-pdf-hover.gif" width="40" height="40" alt=""/>
+			</a>
+			<a class="mediaLink ftrans shadow radius" href="../medias/2016/05/scan%20de%20lenvironnement.pdf" title="Imprimer" target="_blank">
+				<img class="ftrans std radius" src="../cpeweb/images/section/icone-media-print.gif" width="40" height="40" alt=""/>
+				<img class="ftrans overlay radius" src="../cpeweb/images/section/icone-media-print-hover.gif" width="40" height="40" alt=""/>
+			</a>
+				<a class="mediaLink ftrans shadow radius" href="mailto:?subject=Les%20outils%20d&rsquo;animation%20de%20Communagir
+				&body=Les%20outils%20d&rsquo;animation%20de%20Communagir%0D%0A
+				Consultez%20l&rsquo;outil%20&laquo;%20Le scan de l'environnement%20&raquo;%0D%0A
+				http%3A%2F%2Fpouremporter.communagir.org%2Foutils%2Fle-scan-de-lenvironnement" title="Mail">
+			<img class="ftrans std radius" src="../cpeweb/images/section/icone-media-mail.gif" width="40" height="40" alt=""/>
+			<img class="ftrans overlay radius" src="../cpeweb/images/section/icone-media-mail-hover.gif" width="40" height="40" alt=""/>
+		</a>
+
+		<span class="st_twitter_custom mediaLink ftrans shadow radius" displayText='Tweet'>
+			<img class="ftrans std radius" src="../cpeweb/images/section/icone-media-tw.gif" width="40" height="40" alt=""/>
+			<img class="ftrans overlay radius" src="../cpeweb/images/section/icone-media-tw-hover.gif" width="40" height="40" alt=""/>
+		</span>
+
+		<span style="margin-left: 0;" class="st_facebook_custom mediaLink ftrans shadow radius" displayText="Facebook">
+			<img class="ftrans std radius" src="../cpeweb/images/section/icone-media-fb.gif" width="40" height="40" alt=""/>
+			<img class="ftrans overlay radius" src="../cpeweb/images/section/icone-media-fb-hover.gif" width="40" height="40" alt=""/>
+		</span>		
+	</div>
+	<div class="clearfloat"></div>
+</div>					
+					<h3 style="margin-left: 0; margin-top: 0;">Description sommaire</h3>
+					<div class="dynamic nomargin">
+						<p>Il s’agit d’une activité de croisement des savoirs qui fait appel aux multiples connaissances et perceptions présentes dans un groupe et qui les met à profit. Dans un temps relativement court, les participants arrivent à bien camper les principaux éléments du contexte et de la conjoncture (le monde qui les entoure) qui risquent d’affecter leurs objectifs de changement (positivement ou négativement) et à les prendre pleinement en considération dans leurs choix collectifs.</p>
+					</div>
+					<div class="col">
+												<h3><img src="../cpeweb/images/section/icone-objectifs.png" width="32" height="32" alt="Objectifs"/>
+															Objectifs principaux<br />de l’outil
+													</h3>
+						<ul>							
+															<li class="selected">Déclencher ou amorcer les échanges<a href="#" class="objectifsdesc" data-request="1" title="Description"></a></li>
+															<li class="selected">Se donner des assises communes<a href="#" class="objectifsdesc" data-request="2" title="Description"></a></li>
+															<li>Explorer et réfléchir collectivement<a href="#" class="objectifsdesc" data-request="3" title="Description"></a></li>
+															<li>Prioriser et décider ensemble<a href="#" class="objectifsdesc" data-request="4" title="Description"></a></li>
+															<li class="selected">Faire des bilans et évaluer<a href="#" class="objectifsdesc" data-request="5" title="Description"></a></li>
+															<li>Lire sa collectivité<a href="#" class="objectifsdesc" data-request="6" title="Description"></a></li>
+														
+						</ul>
+					</div>
+					<div class="col">
+												<h3><img src="../cpeweb/images/section/icone-etapes.png" width="25" height="22" alt="Étapes"/>
+															Étapes du processus de<br />planification collective
+													</h3>
+						<ul>							
+															<li class="selected">État de situation / diagnostic<a href="#" class="etapesdesc" data-request="1" title="Description"></a></li>
+															<li class="selected">Vision partagée de changement<a href="#" class="etapesdesc" data-request="3" title="Description"></a></li>
+															<li class="selected">Planification stratégique<a href="#" class="etapesdesc" data-request="4" title="Description"></a></li>
+															<li class="selected">Planification des opérations et de la gouvernance<a href="#" class="etapesdesc" data-request="5" title="Description"></a></li>
+															<li class="selected">Mise en œuvre et suivi<a href="#" class="etapesdesc" data-request="6" title="Description"></a></li>
+															<li>Bilan et évaluation stratégique<a href="#" class="etapesdesc" data-request="7" title="Description"></a></li>
+														
+						</ul>
+					</div>
+					<div class="clearfloat"></div>
+					
+											<h3><img src="../cpeweb/images/section/icone-lien.png" width="28" height="31" alt="Les incontournables"/>Les incontournables pour une rencontre réussie</h3>
+						<div class="dynamic">
+							<ul class="incs">
+																	<li><a href="../incontournables/lieu-et-disposition-de-la-salle.html">Choisir un lieu et la disposition de la salle</a></li>
+																	<li><a href="../incontournables/identifier-les-participantes-et-participants.html">Identifier les participantes et participants</a></li>
+																	<li><a href="../incontournables/auto-animation.html">L’autoanimation</a></li>
+																	<li><a href="../incontournables/sadapter-etre-flexible.html">S’adapter, être flexible</a></li>
+																	<li><a href="../incontournables/la-taille-du-groupe.html">Tenir compte de la taille du groupe</a></li>
+																	<li><a href="../incontournables/utilisation-du-temps-disponible.html">Utiliser le temps disponible</a></li>
+															</ul>
+						</div>
+						<!--
+						<div class="dynamic">
+							<form method="post" action="http://pouremporter.communagir.org/incontournables" id="incLinkForm">
+								<a id="filterLink" class="backBtn shadow radius ftrans" href="#">
+									6 incontourbales								</a>
+								<input type="hidden" name="outil" value="54" />
+							</form>
+						</div>
+						-->
+										
+					
+											<h3><img src="../cpeweb/images/section/icone-medal.png" width="26" height="36" alt="Prérequis"/>Prérequis</h3>
+						<div class="dynamic">
+							<p>Il est préférable d’être deux «&nbsp;animateurs-scribes&nbsp;» pour tirer pleinement profit de cette activité. En fait, le groupe s’autoanime (ont une conversation entre eux), alors que les animateurs-scribes écrivent les réponses.</p>
+						</div>
+																<h3><img src="../cpeweb/images/section/icone-pen.png" width="28" height="27" alt="Prérequis"/>Matériel requis</h3>
+						<div class="dynamic">
+							<ul>
+	<li>2 blocs de papier affiche avec chevalet</li>
+	<li>Marqueurs</li>
+	<li>Gommette</li>
+</ul>
+						</div>
+																<div class="col">
+							<h3><img src="../cpeweb/images/section/icone-filter1.png" width="30" height="18" alt="Taille du groupe"/>Taille du groupe</h3>
+							<div class="infoBoxes">								
+																	<div class="infoBox radius shadow"><p>Petit<br /><strong>2-10</strong></p></div>
+																	<div class="infoBox radius shadow"><p>Moyen<br /><strong>10-30</strong></p></div>
+																	<div class="infoBox radius shadow"><p>Grand<br /><strong>30-75</strong></p></div>
+															</div>
+						</div>
+																<div class="col">
+							<h3><img src="../cpeweb/images/section/icone-filter2.png" width="28" height="28" alt="Durée"/>Durée de l’animation</h3>
+							<div class="infoBoxes"><div id="duree" class="infoBox radius shadow"><p>60 à 120 minutes</p></div></div>
+						</div>
+										<div class="clearfloat"></div>
+											<h3><img src="../cpeweb/images/section/icone-heart.png" width="30" height="26" alt="Valeur ajoutée"/>La valeur ajoutée</h3>
+						<div class="dynamic">
+							<p>Inspiré et adapté d’une approche de planification collective mondialement reconnue (<em>Search Conference</em>), le plus intéressant de cette méthode d’animation est probablement de couvrir énormément de contenu en peu de temps, en faisant appel aux savoirs présents dans la salle. Comme tous les points de vue sont recueillis, cette activité favorise le sentiment d’inclusion et peut même servir de réchauffement. Le partage, certes d’apparence un peu chaotique, de tous les éléments de l’environnement (proches ou plus lointains) qui risquent d’influencer le changement visé ou le thème sur lequel une collectivité veut travailler permet de se faire une tête collective bien utile pour être stratégique dans nos choix et pour le demeurer. Chaque fois que j’ai utilisé cette méthode, non seulement les participants ont-ils apprécié l’exercice, mais ils ont eu le sentiment d’avoir fait le tour des essentiels, sans avoir eu à passer plusieurs heures, voir même plusieurs rencontres dans des recherches et des analyses laborieuses! C’est dans le croisement des regards, et dans l’apport de toutes les perceptions, que réside la force et la pertinence de cet exercice.</p>
+
+<p><strong>Sonia Racine</strong><br />
+<em>Conseillère en développement collectif</em></p>
+
+<p>&nbsp;</p>
+						</div>
+																<h3><img src="../cpeweb/images/section/icone-preparation.png" width="30" height="27" alt="Préparation"/>Préparation</h3>
+						<div class="dynamic">
+							<p>Cette activité peut être utilisée à différents moments dans une démarche collective&nbsp;: à l’intérieur d’un exercice d’état de situation, pour déterminer des stratégies pertinentes une fois les objectifs bien campés, pour ajuster la mise en œuvre d’un projet au contexte changeant, etc.</p>
+
+<p>Au départ, il faut tout simplement une question :</p>
+
+<ul>
+	<li>Qu’est-ce qui a changé dans le monde qui nous entoure depuis les 5-6 dernières années?</li>
+</ul>
+
+<p>Celle-ci pourra aussi être directement reliée au changement visé ou au thème que le groupe travaille, tout en gardant l’ouverture très large sur le plan des réponses.</p>
+
+<p>Idéalement, les participants doivent être placés en grande demi-lune (sans table) pour permettre qu’ils se voient les uns les autres et puissent construire ensemble les contenus (conversation collective).</p>
+						</div>
+																<h3><img src="../cpeweb/images/section/icone-pad.png" width="26" height="35" alt="Animation"/>Déroulement de l’animation</h3>
+						<div class="dynamic">
+							<h1><strong>Étapes&nbsp;</strong></h1>
+
+<p><strong>Vérifier la clarté de la tâche et lancer la question.</strong></p>
+
+<ol>
+	<li>
+	<p><strong>Présentation de l’activité (5 min) </strong><br />
+	La question est affichée à la vue de tous (sur du papier-affiche ou encore à l’écran).<br />
+	<br />
+	<strong>Consignes à donner aux participants</strong></p>
+
+	<ul>
+		<li>​Pour arriver à agir ensemble, il faut tenir compte de l’environnement dans lequel on baigne, en d’autres mots s’imprégner du monde qui nous entoure (ça crée des opportunités ou des contraintes – ça donne une idée du sens du vent et des efforts à fournir pour aller dans telle ou telle direction).</li>
+		<li>
+		<p>Qu’est-ce qui se passe dans ce monde actuellement qui vient affecter ce que nous on vit et ce qu’on veut faire?</p>
+		</li>
+		<li>
+		<p>Quelles sont les événements marquants? Quels sont les changements importants?</p>
+
+		<ul>
+			<li>
+			<p>Problèmes, développements significatifs, nouveaux phénomènes, changements politiques, économiques, culturels, etc. à toutes les échelles (dans la communauté d’à côté, dans le secteur voisin, au Québec, au Canada, dans le monde…)</p>
+			</li>
+		</ul>
+		</li>
+		<li>
+		<p>L’exercice est de lister les changements significatifs dans le monde qui nous entoure depuis les 5-6 dernières années par des propositions courtes et claires qui permettent de bien situer l’enjeu (1 seule idée à la fois – pas de discussion ou de débat). Par exemple : nommer la pauvreté dans le monde n’est pas suffisant pour bien comprendre. On peut alors demander des précisions. Y a-t-il un accroissement? Un plus grand écart entre les riches et les pauvres? Pour qui? Etc.</p>
+
+		<ul>
+			<li>
+			<p>Toutes les perceptions sont valides, même si elles peuvent sembler contradictoires (ex. : y’a pas de job vs employeurs qui ne trouvent pas de personnel – les deux sont réels)</p>
+			</li>
+		</ul>
+		</li>
+		<li>
+		<p>Les deux animateurs deviendront des scribes qui noteront sur du papier-affiche toutes les propositions (ils reprennent les mots-clés sans interpréter les propos), au fur et à mesure où elles s’énoncent.</p>
+		</li>
+		<li>
+		<p>Le groupe doit gérer ses tours de parole (c’est un remue-méninges collectif). Des groupes inférieurs à 15 personnes ont plus tendance à sortir d’un mode remue-méninges et à glisser vers des dialogues entre participants. Il faut rester vigilant pour ramener le groupe dès qu’il y a glissement.</p>
+		</li>
+	</ul>
+	</li>
+	<li>
+	<p><strong>Remue-méninges collectif (20 à 45 min) </strong><br />
+	Les scribes notent les réponses des participants sur du papier-affiche et collent les feuilles remplies au fur et à mesure.<br />
+	<br />
+	Vous pouvez arrêter le remue-méninges lorsque les réponses semblent s’épuiser ou qu’il y a beaucoup de redondance. Toutefois, il est normal et même souhaitable qu’il y ait des moments de silence. Ceux-ci permettent d’approfondir ou d’aller dans de nouvelles directions.</p>
+	</li>
+	<li>
+	<p><strong>Traitement des données en sous-groupes (15 à 20 min)</strong><br />
+	Pour que toute l’information recueillie soit utilisable, elle doit être « traitée » minimalement. Laisser le groupe avec une liste d’enjeux complexes, souvent chargé émotivement, sans en dégager quoique soit collectivement, peut être très improductif.<br />
+	<br />
+	Placez le groupe en équipes de 4 à 6 personnes et leur demander d’inscrire sur une grande feuille les 3-4 éléments ayant le plus d’influence sur le changement visé (ou le thème) ou qui aura le plus d’importance dans le déploiement de l’action collective.</p>
+	</li>
+	<li>
+	<p><strong>Partage des travaux et terrains communs (15 à 30 min)</strong><br />
+	Chaque sous-groupe présente le fruit de son travail au grand groupe. Si des éléments sont identiques ou de même nature entre les équipes (ce qui va fort probablement arriver!), identifiez-les (avec un symbole par exemple) pour qu’on comprenne qu’il s’agit du même élément.<br />
+	<br />
+	​Valider la liste d’éléments identifiés avec une question telle que :</p>
+	</li>
+</ol>
+
+<ul>
+	<li>
+	<p>Donc, nous considérons que ces éléments de contexte sont ceux qui vont le plus affecter ce que nous souhaitons faire ensemble et donc ceux dont il faudra tenir compte dans la suite de nos travaux. Est-ce bien cela?</p>
+	</li>
+</ul>
+						</div>
+																<h3><img src="../cpeweb/images/section/icone-fire.png" width="24" height="28" alt="Pièges"/>Pièges à éviter</h3>
+						<div class="dynamic">
+							<ul>
+	<li>Un premier piège dans lequel il est si facile de tomber&nbsp;: ne pas se donner assez de temps pour le remue-méninges ou l’arrêter trop tôt! Il ne faut pas oublier que les moments de silence peuvent être très fertiles et qu’ils permettent souvent de relancer les idées, de sorte que les participants pourront explorer de nouvelles voies.</li>
+	<li>Le plus grand piège est probablement de ne pas se servir de l’information recueillie dans les étapes de travail suivantes. Assurez-vous de réutiliser vos travaux aux moments opportuns!</li>
+</ul>
+						</div>
+																<h3><img src="../cpeweb/images/section/icone-suggestions.png" width="30" height="30" alt="Suggestion et variante"/>Suggestions et variantes</h3>
+						<div class="dynamic">
+							<p>L’exercice du scan peut aussi être utilisé pour se doter d’une vision d’ensemble de l’état de développement d’un milieu (collectivité), d’un des aspects de son développement, d’une problématique, etc.</p>
+						</div>
+																<h3><img src="../cpeweb/images/section/icone-references.png" width="32" height="32" alt="Référence"/>Référence</h3>
+						<div class="dynamic">
+							<p>Activité adaptée de la conférence exploratoire (<em>Search Conférence</em>). Emery, Merrelyn (1999). Searching, The theory and practice of making cultural change. Amsterdam/Philadelphia: John Benjamins.</p>
+						</div>
+										
+											<a class="backBtn shadow radius ftrans" href="../outils.html" title="Voir tous les incontournables">Voir tous les outils</a>
+									</div>
+				<div id="spinner"></div>
+			</div>
+		</section>
+		
+		<!-- Ajouter class='lightbox' sur le .container lors du fadeIn -->
+		<div id="info" class="strans">
+			<div class="content maxW">
+				<img src="../cpeweb/images/section/deco.png" width="378" height="378" alt=""/>
+				<div id="infocontent">
+				</div>
+				<a class="backBtn shadow radius ftrans" href="#" title="Retour à l’outil">Retour à l’outil</a>
+			</div>
+		</div>
+	</div>
+</body>
+
+<!-- Mirrored from pouremporter.communagir.org/outils/le-scan-de-lenvironnement by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Jan 2017 08:48:41 GMT -->
+</html>

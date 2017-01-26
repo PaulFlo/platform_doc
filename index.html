@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="fr" >
+
+<!-- Mirrored from pouremporter.communagir.org/outils by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Jan 2017 08:41:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<script type="text/javascript" src="http://use.typekit.net/sjy3kiq.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<meta name="author" content="Communagir" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link href="cpeweb/css/layout.css" rel="stylesheet" type="text/css" />
+<link href="cpeweb/favicon.png" rel="shortcut icon" type="image/x-icon" />
+<!--[if lt IE 9]><link href="http://pouremporter.communagir.org/cpeweb/css/layoutie.css" rel="stylesheet" type="text/css" /><![endif]-->		
+<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="http://pouremporter.communagir.org/cpeweb/scripts/respond.min.js"></script><![endif]-->		
+<script type="text/javascript" charset="utf-8" src="cpeweb/scripts/global.js"></script>
+<script type="text/javascript" charset="utf-8" src="cpeweb/scripts/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="cpeweb/scripts/jquery.easing.1.3.js"></script>
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+		init();
+	});
+	$(window).load( function() {
+		$('body').removeClass('preload');
+	});
+</script>
+
+</script>	<title>Les exercices pour mener des ateliers</title>
+	<meta name="description" content="Plusieurs outils d’animation." />
+
+	<script type="text/javascript" charset="utf-8" src="cpeweb/scripts/spin.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			filterActivation();
+			incFilterLink();
+			initSpinner();
+		});
+		$(window).load(function()
+		{
+			showBox();
+		});
+		
+		function incFilterLink() {
+	
+			$('.filterBox').click( function() {
+				
+				$('#boxs .box').fadeOut(400);
+				spinner.spin(spinnerTarget);				
+				$.ajax(
+				{					
+					url: $(this).attr('data-request'),					
+					success: function(newHTML, textStatus, jqXHR)
+					{
+						$('#boxs').html(newHTML);
+						showBox();
+						spinner.stop();						
+					},
+					error: function(jqXHR, textStatus, errorThrown) {}
+				});				
+			});
+		}
+	</script></head>
+
+<body id="outils" class="preload notopen" style="background-image: url('cpeweb/images/section/bg_outils3.jpg');">
+	<div class="container">
+
+		<aside class="strans shadow">
+	<div id="asideTop">
+		<a id="logo" class="ftrans" href="index.html" title="Accueil">
+			<span>
+				<img id="logoTxt" class="strans" src="../cpeweb/images/aside/logo-entreepublic.png" width="206" height="auto" alt="Entrée Public"/>
+
+			</span>
+		</a>
+	</div>
+	<ul>
+		
+		<li id="nav2" class="active border">
+			<a class="ftrans" href="index.html" title="Les outils">
+				<div class="centerize">
+					<div class="asidePic">
+						<div class="pics">
+							<img class="ftrans std" src="cpeweb/images/aside/outils.png" alt="Outils"/>
+							<img class="ftrans overlay" src="cpeweb/images/aside/outils-w.png" alt="Outils"/>
+						</div>
+						<span>Ateliers</span>
+					</div>
+				</div>
+			</a>
+		</li>
+	
+	</ul>
+</aside>
+		<section class="strans" role="main">
+
+			<div id="mobilNav" class="ftrans">
+	<div>
+		<a id="mainNavBtn" href="#" title="Menu"><img src="cpeweb/images/header/icone-mainnav.jpg" width="50" height="50" alt=""/></a>
+		<a id="mobilLogo" href="index.html" title="Accueil"><img src="cpeweb/images/aside/logo-entreepublic.png" width="200" height="auto" alt="Communagir"/></a>
+	</div>
+	<ul>
+		
+		<li><a href="outils.html" title="Outils"><img src="cpeweb/images/aside/outils.png" width="36" height="40" alt="Outils"/>Les outils</a></li>
+		
+	</ul>
+</div>			<div id="dtNav" class="ftrans">
+	<a id="home" href="outils.html" title="Accueil">
+		<img class="ftrans std" src="cpeweb/images/header/icone-home-w.png" width="18" height="16" alt=""/>
+		<img class="ftrans overlay" src="cpeweb/images/header/icone-home-g.png" width="18" height="16" alt=""/>
+	</a>
+	</div>
+			<div class="content">
+				<h1>Les exercices<br />d'ateliers</h1>
+                
+                <div id="filters">
+						<div class="filterBox active" data-request="feed/0.html">
+							<div class="filterSelect ftrans">
+								<div class="check ftrans"></div>
+								<span class="ftrans"></span>
+								Introduction
+								<img src="cpeweb/images/section/icone-check.png" width="18" height="15" alt=""/>
+							</div>
+						</div>
+                        <div class="filterBox" data-request="feed/1.html">
+							<div class="filterSelect ftrans">
+								<div class="check ftrans"></div>
+								<span class="ftrans"></span>
+								Public
+								<img src="cpeweb/images/section/icone-check.png" width="18" height="15" alt=""/>
+							</div>
+						</div>
+						<div class="filterBox" data-request="feed/2.html">
+							<div class="filterSelect ftrans">
+								<div class="check ftrans"></div>
+								<span class="ftrans"></span>
+								Projet
+								<img src="cpeweb/images/section/icone-check.png" width="18" height="15" alt=""/>
+							</div>
+						</div>
+						<div class="filterBox" data-request="feed/3.html">
+							<div class="filterSelect ftrans">
+								<div class="check ftrans"></div>
+								<span class="ftrans"></span>
+								Objectif
+								<img src="cpeweb/images/section/icone-check.png" width="18" height="15" alt=""/>
+							</div>
+						</div>
+						<div class="filterBox" data-request="feed/4.html">
+							<div class="filterSelect ftrans">
+								<div class="check ftrans"></div>
+								<span class="ftrans"></span>
+								Moyens
+								<img src="cpeweb/images/section/icone-check.png" width="18" height="15" alt=""/>
+							</div>
+						</div>
+                    	<div class="filterBox " data-request="feed/5.html">
+							<div class="filterSelect ftrans">
+								<div class="check ftrans"></div>
+								<span class="ftrans"></span>
+								Canaux
+								<img src="cpeweb/images/section/icone-check.png" width="18" height="15" alt=""/>
+							</div>
+						</div>
+						<div class="filterBox" data-request="feed/6.html">
+							<div class="filterSelect ftrans">
+								<div class="check ftrans"></div>
+								<span class="ftrans"></span>
+								Création
+								<img src="cpeweb/images/section/icone-check.png" width="18" height="15" alt=""/>
+							</div>
+						</div>
+                    <div class="filterBox " data-request="feed/7.html">
+							<div class="filterSelect ftrans">
+								<div class="check ftrans"></div>
+								<span class="ftrans"></span>
+								Conception de livrable
+								<img src="cpeweb/images/section/icone-check.png" width="18" height="15" alt=""/>
+							</div>
+						</div>
+						<div class="filterBox" data-request="feed/8.html">
+							<div class="filterSelect ftrans">
+								<div class="check ftrans"></div>
+								<span class="ftrans"></span>
+								Application
+								<img src="cpeweb/images/section/icone-check.png" width="18" height="15" alt=""/>
+							</div>
+						</div>
+                    
+						<div class="clearfloat"></div>
+					</div>
+                
+					
+						<div class="clearfloat"></div>
+					
+					<div class="clearfloat"></div>
+
+				<!-- Ajax zone -->
+				<div id="boxLayout">
+					<div id="boxs">
+						
+                      <!-- Exercice 1 -->  
+                        <a class="box radius shadow" href="outils/motcle.html">
+		<div class="boxFlip"></div>
+		<img class="boxMore" src="cpeweb/images/section/icone-plus.png" width="12" height="12" alt=""/>
+		<div class="boxContent">
+			<h2>Le mot clef</h2>
+							<p>Refleter son état d'esprit à travers un mot clé.
+</p>
+					</div>	
+		<div class="boxData"><span>
+											<img src="cpeweb/images/section/icone-people.png" width="23" height="15" alt=""/>
+						  Facultatif </span>
+				<span>
+											<img src="cpeweb/images/section/icone-time.png" width="15" height="15" alt=""/>
+						10 min									</span>
+                            
+                           
+                            </div></a>
+                        
+                        <!-- Exercice 2--> 
+	<a class="box radius shadow" href="outils/portraitschinois.html">
+		<div class="boxFlip"></div>
+		<img class="boxMore" src="cpeweb/images/section/icone-plus.png" width="12" height="12" alt=""/>
+		<div class="boxContent">
+			<h2>Portraits Chinois</h2>
+							<p>Chaque participant réalise son portrait chinois.
+</p>
+					</div>	
+		<div class="boxData"><span>
+											<img src="cpeweb/images/section/icone-people.png" width="23" height="15" alt=""/>
+						Facultatif							</span>
+				<span>
+											<img src="cpeweb/images/section/icone-time.png" width="15" height="15" alt=""/>
+						15 min									</span></div></a>
+                        
+                           <!-- Exercice 3--> 
+                        
+	<a class="box radius shadow" href="index/reveler-les-competences.html">
+		<div class="boxFlip"></div>
+		<img class="boxMore" src="cpeweb/images/section/icone-plus.png" width="12" height="12" alt=""/>
+		<div class="boxContent">
+			<h2>Exercice 3</h2>
+							<p>courte description 
+</p>
+					</div>	
+		<div class="boxData"><span>
+											<img src="cpeweb/images/section/icone-people.png" width="23" height="15" alt=""/>
+						Facultatif								</span>
+				<span>
+											<img src="cpeweb/images/section/icone-time.png" width="15" height="15" alt=""/>
+						20-30									</span></div></a>
+                        
+                           <!-- Exercice 4--> 
+                        
+	<a class="box radius shadow" href="index/reveler-les-competences.html">
+		<div class="boxFlip"></div>
+		<img class="boxMore" src="cpeweb/images/section/icone-plus.png" width="12" height="12" alt=""/>
+		<div class="boxContent">
+			<h2>Exercice 4</h2>
+							<p>courte description 
+</p>
+					</div>	
+		<div class="boxData"><span>
+											<img src="cpeweb/images/section/icone-people.png" width="23" height="15" alt=""/>
+						Obligatoire								</span>
+				<span>
+											<img src="cpeweb/images/section/icone-time.png" width="15" height="15" alt=""/>
+						20-30									</span></div></a>
+                        
+                           <!-- Exercice 5--> 
+                        
+	<a class="box radius shadow" href="index/reveler-les-competences.html">
+		<div class="boxFlip"></div>
+		<img class="boxMore" src="cpeweb/images/section/icone-plus.png" width="12" height="12" alt=""/>
+		<div class="boxContent">
+			<h2>Exercice 5</h2>
+							<p>courte description 
+</p>
+					</div>	
+		<div class="boxData"><span>
+											<img src="cpeweb/images/section/icone-people.png" width="23" height="15" alt=""/>
+						Facultatif									</span>
+				<span>
+											<img src="cpeweb/images/section/icone-time.png" width="15" height="15" alt=""/>
+						20-30									</span></div></a>
+                        
+                        
+                           <!-- Exercice 6--> 
+	
+<a class="box radius shadow" href="index/reveler-les-competences.html">
+		<div class="boxFlip"></div>
+		<img class="boxMore" src="cpeweb/images/section/icone-plus.png" width="12" height="12" alt=""/>
+		<div class="boxContent">
+			<h2>Exercice 6</h2>
+							<p>courte description 
+</p>
+					</div>	
+		<div class="boxData"><span>
+											<img src="cpeweb/images/section/icone-people.png" width="23" height="15" alt=""/>
+						Obligatoire									</span>
+				<span>
+											<img src="cpeweb/images/section/icone-time.png" width="15" height="15" alt=""/>
+						20-30									</span></div></a>
+                        
+                           <!-- Fin des Exercices --> 
+                        
+<div class="clearfloat"></div>					</div>
+					<div id="spinner"></div>
+				</di
+			</div>
+		</section>
+
+		<div id="info" class="strans">
+			<div class="content maxW">
+				<img src="cpeweb/images/section/deco.png" width="378" height="378" alt=""/>
+				<div id="infocontent">
+				</div>
+				<a class="backBtn shadow radius ftrans" href="#" title="Retour aux outils">Retour aux outils</a>
+			</div>
+		</div>
+	</div>
+</body>
+
+<!-- Mirrored from pouremporter.communagir.org/outils by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Jan 2017 08:42:48 GMT -->
+</html>

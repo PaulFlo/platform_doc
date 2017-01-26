@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="fr" >
+
+<!-- Mirrored from pouremporter.communagir.org/outils/cafe-du-monde by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Jan 2017 09:07:10 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<script type="text/javascript" src="http://use.typekit.net/sjy3kiq.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<meta name="author" content="Communagir" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link href="../cpeweb/css/layout.css" rel="stylesheet" type="text/css" />
+<link href="../cpeweb/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<!--[if lt IE 9]><link href="http://pouremporter.communagir.org/cpeweb/css/layoutie.css" rel="stylesheet" type="text/css" /><![endif]-->		
+<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="http://pouremporter.communagir.org/cpeweb/scripts/respond.min.js"></script><![endif]-->		
+<script type="text/javascript" charset="utf-8" src="../cpeweb/scripts/global.js"></script>
+<script type="text/javascript" charset="utf-8" src="../cpeweb/scripts/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../cpeweb/scripts/jquery.easing.1.3.js"></script>
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+		init();
+	});
+	$(window).load( function() {
+		$('body').removeClass('preload');
+	});
+</script>
+
+<!-- Google Analytic -->
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-33014145-1']);
+    _gaq.push(['_addDevId', 'i9k95']); // Google Analyticator App ID with Google
+	_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>	<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "c3b4cbb0-402a-4b69-969c-3696fa048e01", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+
+<!-- todo complete share meta -->
+<meta property="og:title" content="Le café du monde | Outils d'animation | Communagir" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://pouremporter.communagir.org/outils/cafe-du-monde" />
+<meta property="og:image" content="http://pouremporter.communagir.org/cpeweb/images/logo-fb.png" />
+<meta property="og:description" content="Une ambiance informelle, comme dans un café, pour faire émerger les idées et la créativité ou approfondir un sujet qui nous tient à cœur." />
+<meta property="og:site_name" content="Communagir" />	
+	<title>Le café du monde | Outils d'animation | Communagir</title>
+	<meta name="description" content="Une ambiance informelle, comme dans un café, pour faire émerger les idées et la créativité ou approfondir un sujet qui nous tient à cœur." />
+
+	<script type="text/javascript" charset="utf-8" src="../cpeweb/scripts/spin.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			initSpinner();
+			initOutil();
+
+			$('.objectifsdesc').click ( function() {
+			
+				spinner.spin(spinnerTarget);
+				$.ajax(
+				{					
+					url: 'http://pouremporter.communagir.org/objectifs/' + $(this).attr('data-request'),
+					success: function(newHTML, textStatus, jqXHR)
+					{
+						$('#infocontent').html(newHTML);
+						$('.container').addClass('lightbox');
+						$('#info').fadeIn(400);						
+						spinner.stop();						
+					},
+					error: function(jqXHR, textStatus, errorThrown) {}
+				});
+				
+				return false;
+			})
+			
+			$('.etapesdesc').click ( function() {
+			
+				spinner.spin(spinnerTarget);
+				$.ajax(
+				{					
+					url: 'http://pouremporter.communagir.org/etapes/' + $(this).attr('data-request'),
+					success: function(newHTML, textStatus, jqXHR)
+					{
+						$('#infocontent').html(newHTML);
+						$('.container').addClass('lightbox');
+						$('#info').fadeIn(200);						
+						spinner.stop();						
+					},
+					error: function(jqXHR, textStatus, errorThrown) {}
+				});
+				
+				return false;
+			})			
+		});
+	</script>
+</head>
+<body id="outils" class="preload open" style="background-image: url('../cpeweb/images/section/bg_outils1.jpg');">
+	<div class="container">
+
+		<aside class="strans shadow">
+	<div id="asideTop">
+		<a id="logo" class="ftrans" href="../index.html" title="Accueil">
+			<span>
+				<img id="logoPic" class="strans" src="../cpeweb/images/aside/logo-pic.png" alt="Communagir"/><br />
+				<img id="logoTxt" class="strans" src="../cpeweb/images/aside/logo-communagir.png" width="206" height="52" alt="Communagir"/>
+			</span>
+		</a>
+	</div>
+	<ul>
+		<li id="nav1" >
+			<a class="ftrans" href="../incontournables.html" title="Les incontournables">
+				<div class="centerize">
+					<div class="asidePic">
+						<div class="pics">
+							<img class="ftrans std" src="../cpeweb/images/aside/incontournables.png" alt="Incontournables"/>
+							<img class="ftrans overlay" src="../cpeweb/images/aside/incontournables-w.png" alt="Incontournables"/>
+						</div>
+						<span>Pour une rencontre réussie</span>
+					</div>
+				</div>
+			</a>
+		</li>
+		<li id="nav2" class="active border">
+			<a class="ftrans" href="../outils.html" title="Les outils">
+				<div class="centerize">
+					<div class="asidePic">
+						<div class="pics">
+							<img class="ftrans std" src="../cpeweb/images/aside/outils.png" alt="Outils"/>
+							<img class="ftrans overlay" src="../cpeweb/images/aside/outils-w.png" alt="Outils"/>
+						</div>
+						<span>Les outils</span>
+					</div>
+				</div>
+			</a>
+		</li>
+		<li id="nav3" >
+			<a class="ftrans" href="../conseillers-en-developpement-collectif.html" title="Vos conseillers">
+				<div class="centerize">
+					<div class="asidePic">
+						<div class="pics">
+							<img class="ftrans std" src="../cpeweb/images/aside/conseillers.png" alt="Conseillers"/>
+							<img class="ftrans overlay" src="../cpeweb/images/aside/conseillers-w.png" alt="Conseillers"/>
+						</div>
+						<span>Les conseillers</span>
+					</div>
+				</div>
+			</a>
+		</li>
+	<li id="nav4">
+			<div class="centerize">
+			<span><a title="Contact" href="mailto:info@communagir.org">info@communagir.org</a></span>
+			
+							</div>
+						</li>
+	
+	
+	
+
+	</ul>
+</aside>
+		<section class="strans" role="main">
+			
+			<div id="mobilNav" class="ftrans">
+	<div>
+		<a id="mainNavBtn" href="#" title="Menu"><img src="../cpeweb/images/header/icone-mainnav.jpg" width="50" height="50" alt=""/></a>
+		<a id="mobilLogo" href="../index.html" title="Accueil"><img src="../cpeweb/images/aside/logo-pic.png" width="76" height="48" alt="Communagir"/></a>
+	</div>
+	<ul>
+		<li><a href="../incontournables.html" title="Incontournables"><img style="margin-right: 5px;" src="../cpeweb/images/aside/incontournables.png" width="36" height="40" alt="Incontournables"/>Pour une rencontre réussie</a></li>
+		<li><a href="../outils.html" title="Outils"><img src="../cpeweb/images/aside/outils.png" width="36" height="40" alt="Outils"/>Les outils</a></li>
+		<li><a href="../conseillers-en-developpement-collectif.html" title="Conseillers"><img src="../cpeweb/images/aside/conseillers.png" width="36" height="40" alt="Conseillers"/>Les conseillers</a></li>
+		<li id="last">
+			<a href="http://www.communagir.org/" title="Accéder au site"><img src="../cpeweb/images/header/icone-std-m.png" width="41" height="36" alt="Site web"/></a>
+			<a href="https://www.facebook.com/communagir" target="_blank" title="Facebook"><img src="../cpeweb/images/header/icone-facebook-m.png" width="18" height="36" alt="Facebook"/></a>
+			<a href="https://twitter.com/communagir" target="_blank" title="Twitter"><img src="../cpeweb/images/header/icone-twitter-m.png" width="42" height="34" alt="Twitter"/></a>
+		</li>
+	</ul>
+</div>			<div id="dtNav" class="ftrans">
+	<ul>
+		<li class="md-scr-hide"><a style="width: auto;" href="http://www.communagir.org/" title="Site web">Accéder au site web de <span class="ftrans">Communagir</span></a></li>
+		<li class="md-scr-show"><a href="http://www.communagir.org/" title="Site Web">
+				<img class="ftrans std" src="../cpeweb/images/header/icone-std-w.png" width="16" height="16" alt=""/>
+				<img class="ftrans overlay" src="../cpeweb/images/header/icone-std-g.png" width="16" height="16" alt=""/>
+			</a></li>
+		<li><a href="https://www.facebook.com/communagir" title="Facebook" target="_blank">
+				<img class="ftrans std" src="../cpeweb/images/header/icone-facebook-w.png" width="16" height="16" alt=""/>
+				<img class="ftrans overlay" src="../cpeweb/images/header/icone-facebook-g.png" width="16" height="16" alt=""/>
+			</a></li>
+		<li><a href="https://twitter.com/communagir" title="Twitter" target="_blank">
+				<img class="ftrans std" src="../cpeweb/images/header/icone-twitter-w.png" width="16" height="16" alt=""/>
+				<img class="ftrans overlay" src="../cpeweb/images/header/icone-twitter-g.png" width="16" height="16" alt=""/>
+			</a></li>
+	</ul>
+	<a id="home" href="../index.html" title="Accueil">
+		<img class="ftrans std" src="../cpeweb/images/header/icone-home-w.png" width="18" height="16" alt=""/>
+		<img class="ftrans overlay" src="../cpeweb/images/header/icone-home-g.png" width="18" height="16" alt=""/>
+	</a>
+	
+	<a class="linkBack linkOutil" href="../outils.html" title="Retour aux outils">Retour aux <span class="ftrans">outils</span></a>
+	<a class="linkBack linkConseil" href="../conseillers-en-developpement-collectif.html" title="Retour aux conseillers">Retour aux <span class="ftrans">conseillers</span></a>
+	<a class="linkBack linkInc" href="../incontournables.html" title="Retour aux incontournables">Retour aux <span class="ftrans">incontournables</span></a>
+</div>
+			<div class="content">
+				<div class="maxW">
+				
+					<h1>Le café du monde </h1>
+					
+					<div class="mediaBox ftrans">
+	<div id="mediaLinks">
+					<a class="mediaLink ftrans shadow radius" href="../medias/2014/09/cafe_du_monde.pdf" title="Imprimer" target="_blank">
+				<img class="ftrans std radius" src="../cpeweb/images/section/icone-media-pdf.gif" width="40" height="40" alt=""/>
+				<img class="ftrans overlay radius" src="../cpeweb/images/section/icone-media-pdf-hover.gif" width="40" height="40" alt=""/>
+			</a>
+			<a class="mediaLink ftrans shadow radius" href="../medias/2014/09/cafe_du_monde.pdf" title="Imprimer" target="_blank">
+				<img class="ftrans std radius" src="../cpeweb/images/section/icone-media-print.gif" width="40" height="40" alt=""/>
+				<img class="ftrans overlay radius" src="../cpeweb/images/section/icone-media-print-hover.gif" width="40" height="40" alt=""/>
+			</a>
+				<a class="mediaLink ftrans shadow radius" href="mailto:?subject=Les%20outils%20d&rsquo;animation%20de%20Communagir
+				&body=Les%20outils%20d&rsquo;animation%20de%20Communagir%0D%0A
+				Consultez%20l&rsquo;outil%20&laquo;%20Le café du monde %20&raquo;%0D%0A
+				http%3A%2F%2Fpouremporter.communagir.org%2Foutils%2Fcafe-du-monde" title="Mail">
+			<img class="ftrans std radius" src="../cpeweb/images/section/icone-media-mail.gif" width="40" height="40" alt=""/>
+			<img class="ftrans overlay radius" src="../cpeweb/images/section/icone-media-mail-hover.gif" width="40" height="40" alt=""/>
+		</a>
+
+		<span class="st_twitter_custom mediaLink ftrans shadow radius" displayText='Tweet'>
+			<img class="ftrans std radius" src="../cpeweb/images/section/icone-media-tw.gif" width="40" height="40" alt=""/>
+			<img class="ftrans overlay radius" src="../cpeweb/images/section/icone-media-tw-hover.gif" width="40" height="40" alt=""/>
+		</span>
+
+		<span style="margin-left: 0;" class="st_facebook_custom mediaLink ftrans shadow radius" displayText="Facebook">
+			<img class="ftrans std radius" src="../cpeweb/images/section/icone-media-fb.gif" width="40" height="40" alt=""/>
+			<img class="ftrans overlay radius" src="../cpeweb/images/section/icone-media-fb-hover.gif" width="40" height="40" alt=""/>
+		</span>		
+	</div>
+	<div class="clearfloat"></div>
+</div>					
+					<h3 style="margin-left: 0; margin-top: 0;">Description sommaire</h3>
+					<div class="dynamic nomargin">
+						<p>S’inspirant du <em>World Café</em>, cette variante permet d’explorer collectivement différentes idées et solutions face à des problèmes, enjeux et défis précédemment soulevés par le groupe, et de faire émerger de nouvelles idées, des orientations ou des énoncés de vision. Cette activité prend la forme d’un café où les participantes et participants échangent en petits groupes; elle aide à sortir d’une logique de travail trop linéaire et à identifier de nouvelles voies possibles. Il s’agit d’une discussion libre, ouverte et créatrice qui ne porte pas à conséquence. Aucune décision ne sera prise, ce qui permet de donner libre cours à son imagination et à celles des autres. L’idée c’est de comprendre qu’à plusieurs têtes, on a plus d’idées et qu’on peut «&nbsp;faire du pouce&nbsp;» sur les idées des autres.</p>
+					</div>
+					<div class="col">
+												<h3><img src="../cpeweb/images/section/icone-objectifs.png" width="32" height="32" alt="Objectifs"/>
+															Objectifs principaux<br />de l’outil
+													</h3>
+						<ul>							
+															<li class="selected">Déclencher ou amorcer les échanges<a href="#" class="objectifsdesc" data-request="1" title="Description"></a></li>
+															<li>Se donner des assises communes<a href="#" class="objectifsdesc" data-request="2" title="Description"></a></li>
+															<li class="selected">Explorer et réfléchir collectivement<a href="#" class="objectifsdesc" data-request="3" title="Description"></a></li>
+															<li>Prioriser et décider ensemble<a href="#" class="objectifsdesc" data-request="4" title="Description"></a></li>
+															<li class="selected">Faire des bilans et évaluer<a href="#" class="objectifsdesc" data-request="5" title="Description"></a></li>
+															<li>Lire sa collectivité<a href="#" class="objectifsdesc" data-request="6" title="Description"></a></li>
+														
+						</ul>
+					</div>
+					<div class="col">
+												<h3><img src="../cpeweb/images/section/icone-etapes.png" width="25" height="22" alt="Étapes"/>
+															Étape du processus de<br />planification collective
+													</h3>
+						<ul>							
+															<li>État de situation / diagnostic<a href="#" class="etapesdesc" data-request="1" title="Description"></a></li>
+															<li>Vision partagée de changement<a href="#" class="etapesdesc" data-request="3" title="Description"></a></li>
+															<li>Planification stratégique<a href="#" class="etapesdesc" data-request="4" title="Description"></a></li>
+															<li>Planification des opérations et de la gouvernance<a href="#" class="etapesdesc" data-request="5" title="Description"></a></li>
+															<li>Mise en œuvre et suivi<a href="#" class="etapesdesc" data-request="6" title="Description"></a></li>
+															<li>Bilan et évaluation stratégique<a href="#" class="etapesdesc" data-request="7" title="Description"></a></li>
+														
+						</ul>
+					</div>
+					<div class="clearfloat"></div>
+					
+											<h3><img src="../cpeweb/images/section/icone-lien.png" width="28" height="31" alt="Les incontournables"/>Les incontournables pour une rencontre réussie</h3>
+						<div class="dynamic">
+							<ul class="incs">
+																	<li><a href="../incontournables/la-pleniere.html">La plénière</a></li>
+															</ul>
+						</div>
+						<!--
+						<div class="dynamic">
+							<form method="post" action="http://pouremporter.communagir.org/incontournables" id="incLinkForm">
+								<a id="filterLink" class="backBtn shadow radius ftrans" href="#">
+									1 incontourbale								</a>
+								<input type="hidden" name="outil" value="22" />
+							</form>
+						</div>
+						-->
+										
+					
+											<h3><img src="../cpeweb/images/section/icone-medal.png" width="26" height="36" alt="Prérequis"/>Prérequis</h3>
+						<div class="dynamic">
+							<p>Avoir précédemment exposé ces problèmes, enjeux, défis, orientations, etc. Avoir une connaissance du contexte de réalisation.</p>
+						</div>
+																<h3><img src="../cpeweb/images/section/icone-pen.png" width="28" height="27" alt="Prérequis"/>Matériel requis</h3>
+						<div class="dynamic">
+							<ul>
+	<li>Une étiquette individualisée par personne</li>
+	<li>Des nappes en papier sur chaque table</li>
+	<li>Des crayons-feutres disposés sur les tables (minimalement un par personne)</li>
+	<li>Une grande feuille au mur</li>
+	<li>Des feuilles d’information sur le rôle des hôtes de table (si elles n’ont pas été envoyées au préalable)</li>
+</ul>
+
+<p><em>Note&nbsp;: Il faut également recréer l’ambiance informelle d’un café (café, chandelles, etc.).</em></p>
+						</div>
+																<div class="col">
+							<h3><img src="../cpeweb/images/section/icone-filter1.png" width="30" height="18" alt="Taille du groupe"/>Taille du groupe</h3>
+							<div class="infoBoxes">								
+																	<div class="infoBox radius shadow"><p>Moyen<br /><strong>10-30</strong></p></div>
+																	<div class="infoBox radius shadow"><p>Grand<br /><strong>30-75</strong></p></div>
+																	<div class="infoBox radius shadow"><p>T-grand<br /><strong>75+</strong></p></div>
+															</div>
+						</div>
+																<div class="col">
+							<h3><img src="../cpeweb/images/section/icone-filter2.png" width="28" height="28" alt="Durée"/>Durée de l’animation</h3>
+							<div class="infoBoxes"><div id="duree" class="infoBox radius shadow"><p>45 minutes à 2 heures (selon le nombre et la durée des vagues de conversation).</p></div></div>
+						</div>
+										<div class="clearfloat"></div>
+											<h3><img src="../cpeweb/images/section/icone-heart.png" width="30" height="26" alt="Valeur ajoutée"/>La valeur ajoutée</h3>
+						<div class="dynamic">
+							<p>C’est une activité que nous utilisons beaucoup et que nous modifions aussi beaucoup! Elle permet des échanges riches sur n’importe quel sujet et est très utile lorsque l’on souhaite travailler avec des grands groupes. Elle permet de faire émerger de nouvelles possibilités, et pour les membres d’un groupe qui se connaissent déjà de se voir parfois sous de nouveaux visages. Le fait qu’elle se déroule dans une ambiance informelle, crée également un sentiment général agréable qui favorise la création d’un NOUS et fait pratiquer les gens au travail en sous-groupes.</p>
+
+<p><strong>Marie-Denise Prud’Homme</strong></p>
+
+<p>Conseillère en développement collectif</p>
+						</div>
+																<h3><img src="../cpeweb/images/section/icone-preparation.png" width="30" height="27" alt="Préparation"/>Préparation</h3>
+						<div class="dynamic">
+							<p>Préparez une à deux questions que vous souhaitez explorer avec les gens. La question doit être ouverte et stimulante pour les personnes présentes. Le but est de favoriser les échanges. Le sujet de la rencontre peut être annoncé au préalable, mais pour garder un effet de surprise et une certaine spontanéité dans les échanges, il est préférable de ne pas diffuser les questions avant la rencontre.</p>
+
+<p><strong>Exemples de questions&nbsp;:</strong></p>
+
+<ul>
+	<li>Quels sont les enjeux et défis sur lesquels il faut s’attarder et pourquoi?</li>
+	<li>Quel changement ou amélioration fera une différence dans nos façons de faire?</li>
+</ul>
+
+<p>Puisque cette activité vise à explorer les possibilités, il est important que les participantes et les participants discutent avec plusieurs personnes différentes tout au long de l’activité. Pour y parvenir, l’activité se divise en quelques vagues successives d’échanges, les personnes étant invitées à se déplacer, à changer de table et à se «&nbsp;mélanger&nbsp;» entre chacune de ces vagues, pour&nbsp;ne pas discuter avec les mêmes personnes plus d’une fois. Vous devez conséquemment préparer une étiquette individualisée par participante et par participant. Sur chaque étiquette, on indique une séquence de déplacement unique pour la participante ou le participant. (ex.&nbsp;: vague #1/table #4, vague #2/table #8, vague #3, table #1).</p>
+
+<p><strong>Hôtes de table</strong></p>
+
+<ul>
+	<li>Une personne par table aura à jouer le rôle «&nbsp;d’hôte de table&nbsp;» qui aidera à initier l’échange. Il faut donc prévoir à l’avance un nombre suffisant de personnes qui accepteront de jouer ce rôle. Une feuille d’information peut leur être envoyée à l’avance. Avant le début de la rencontre, vous pouvez réunir les hôtes pour leur rappeler leur rôle et répondre à leurs questions.</li>
+</ul>
+						</div>
+																<h3><img src="../cpeweb/images/section/icone-pad.png" width="26" height="35" alt="Animation"/>Déroulement de l’animation</h3>
+						<div class="dynamic">
+							<h1>Étapes</h1>
+
+<h2>1. Bienvenue et lancement du café (5 min)</h2>
+
+<ul>
+	<li>Commencez la rencontre en expliquant que l’objectif de l’activité sera d’échanger sur la question qui vous réunit dans une ambiance informelle, comme si on se trouvait dans un café.</li>
+	<li>Expliquez le processus de l’atelier&nbsp;:
+	<ul>
+		<li>Il y aura 3 vagues d’échanges (ou le nombre que vous aurez choisi) à chacune des tables;</li>
+		<li>Lors du passage d’une vague d’échanges à l’autre, les personnes devront se déplacer pour changer de table. Pour ce faire, elles devront suivre la séquence de déplacement inscrite sur leur étiquette individualisée (ex.&nbsp;: vague #1/table #4, vague #2/table #8, vague #3, table #1).</li>
+	</ul>
+	</li>
+	<li>Précisez le temps que vous allouez pour chacune des vagues (habituellement entre 15 et 25 min).</li>
+	<li>Mentionnez qu’ils seront accueillis par un hôte à chacune des tables qui les guidera dans l’activité.</li>
+	<li>Expliquez qu’il y a une nappe en papier et des crayons-feutres sur chacune des tables. Invitez les personnes à communiquer et à laisser une trace de leur passage par des mots-clés, dessins, etc.</li>
+</ul>
+
+<h2>2. Première vague et vagues subséquentes (15 à 25 minutes par vague en ajoutant 3-4 minutes par transition)</h2>
+
+<ul>
+	<li>Répétez la question à explorer en petits groupes et invitez les gens à se rendre à leur première table.</li>
+	<li>5 minutes avant la fin de la première vague, indiquez le temps restant.</li>
+	<li>À la fin de la période, invitez les participantes et participants à passer à la prochaine vague. Rappelez la question ou si celle-ci change, indiquez la nouvelle.</li>
+	<li>Faites de même pour les vagues subséquentes.</li>
+</ul>
+
+<h2>3. Synthèse des échanges (15-25 min)</h2>
+
+<ul>
+	<li>À la fin des vagues d’échanges, invitez les hôtes à prendre la parole et faites ressortir les principales idées qui proviennent des échanges.</li>
+	<li>Notez ces idées sur la grande feuille à l’avant. Prenez le temps de ramasser toutes les feuilles sur les tables pour pouvoir les compiler et les utiliser par la suite.</li>
+</ul>
+
+<h1>Rôle des hôtes de table</h1>
+
+<p><strong>(Il peut être judicieux de leur faire parvenir ces consignes au préalable)</strong></p>
+
+<ul>
+	<li>Il y aura trois (ou le nombre que vous aurez choisi) vagues d’échanges au cours du Café du monde.</li>
+	<li>Un signal sonore sera donné afin d’inviter les gens à changer de table en fonction des numéros qu’ils ont sur leur étiquette.</li>
+	<li>Au début de chaque vague, posez les questions que l’on vous a remises et lancez la discussion. Vous n’avez pas à animer les échanges, mais à les stimuler.</li>
+	<li>Lors du changement de table, faites un très court résumé de ce qui s’est dit à la table lors de la ronde précédente et invitez les nouvelles personnes à poursuivre le travail d’exploration (à faire du pouce sur ce qui a été fait). L’objectif de ce changement de table est de faire foisonner les idées!</li>
+	<li>Prenez un court instant, cinq minutes avant la fin des discussions, pour faire une synthèse des idées fortes. Inscrivez-les sur la table.</li>
+	<li>Lors de la plénière, à la fin des vagues d’échanges, l’animatrice ou animateur fera un appel aux différentes tables pour évoquer les idées fortes.</li>
+	<li>Essayez de rendre la conversation la plus naturelle possible (évitez si possible les tours de parole) – on tente de se mettre dans l’ambiance d’une «&nbsp;discussion de café&nbsp;».</li>
+	<li>Si des gens parlent peu (ou semblent avoir de la difficulté à prendre la parole)&nbsp;: allez chercher leur avis.</li>
+</ul>
+						</div>
+																<h3><img src="../cpeweb/images/section/icone-fire.png" width="24" height="28" alt="Pièges"/>Pièges à éviter</h3>
+						<div class="dynamic">
+							<ul>
+	<li>Faire plus de trois vagues de discussions. Les échanges deviennent moins intéressants et l’activité est trop longue.</li>
+	<li>Ne pas expliquer suffisamment aux hôtes de table leur rôle.</li>
+	<li><a href="../incontournables/la-pleniere.html">Une plénière</a> trop longue. Pour l'éviter, lancez un défi aux sous-groupes et à leurs hôtes.</li>
+</ul>
+						</div>
+																<h3><img src="../cpeweb/images/section/icone-suggestions.png" width="30" height="30" alt="Suggestion et variante"/>Suggestions et variantes</h3>
+						<div class="dynamic">
+							<p>Vous trouverez une variante sous&nbsp;: Le café des possibilités</p>
+						</div>
+																<h3><img src="../cpeweb/images/section/icone-references.png" width="32" height="32" alt="Référence"/>Référence</h3>
+						<div class="dynamic">
+							<p><strong><a href="../medias/2014/09/cafe_du_monde.pdf">Télécharger la version PDF de l'outil</a></strong></p>
+
+<p>BROWN, Juanita et David ISAACS, 2005. <a href="http://www.theworldcafe.com/book.html">The World Café: Shaping Our Futures Through Conversations That Matter</a>. San Francisco&nbsp;: Berrett-Koehler Publishers, 242 p.</p>
+						</div>
+										
+											<a class="backBtn shadow radius ftrans" href="../outils.html" title="Voir tous les incontournables">Voir tous les outils</a>
+									</div>
+				<div id="spinner"></div>
+			</div>
+		</section>
+		
+		<!-- Ajouter class='lightbox' sur le .container lors du fadeIn -->
+		<div id="info" class="strans">
+			<div class="content maxW">
+				<img src="../cpeweb/images/section/deco.png" width="378" height="378" alt=""/>
+				<div id="infocontent">
+				</div>
+				<a class="backBtn shadow radius ftrans" href="#" title="Retour à l’outil">Retour à l’outil</a>
+			</div>
+		</div>
+	</div>
+</body>
+
+<!-- Mirrored from pouremporter.communagir.org/outils/cafe-du-monde by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Jan 2017 09:07:10 GMT -->
+</html>
